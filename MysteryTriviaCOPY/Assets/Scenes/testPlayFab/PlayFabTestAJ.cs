@@ -22,6 +22,7 @@ public class PlayFabTestAJ : MonoBehaviour
     void Start()
     {
         usertest = new User();
+        PlayerPrefs.SetInt("newgame", 0); //auto set newgame off
         GetData();
         GetDifficulty();
         GetCategory();

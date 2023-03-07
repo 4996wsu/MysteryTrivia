@@ -43,7 +43,7 @@ public class User
     }
     public void PrintUser()
     {
-        Debug.Log("email : " + this.Email + " usn: " + this.Username +
+        Debug.LogError("email : " + this.Email + " usn: " + this.Username +
            " hintpoints: " + this.HintPoints + " level: " + this.Level + " mazenumber:" + this.MazeNumber + " Category: " + this.Category);
 
     }

@@ -48,33 +48,41 @@ public class Player : MonoBehaviour
         //StartCoroutine(doWait());
         //toggleSpeed();
         user = new User();
-        
- 
+        if (flag == 0)
+        {
+            Debug.LogError("Flag = 0");
+            int newgameflag = PlayerPrefs.GetInt("newgame");
+            if (newgameflag == 1)//==1 means it is new game
+            {
+                Debug.LogError("user newgameflag ==1");
+                user.PrintUser();
+                PlayerPrefs.SetInt("newgame", 0); //0 set to not new game
+                Read_Data();
+                user.HintPoints = 0;
+                Debug.LogError("user after newgameflag==1");
+                user.PrintUser();
+            }
+            else
+            {
+                Debug.LogError("ELSE read_data");
+                Read_Data();//this is NOT a new game so read data normally
+                user.PrintUser();
+            }
+
+            flag = flag + 1;
+        }
+
     }
  
     // Update is called once per frame
     void Update()
     {
-        if (flag == 0)
+        if (flag <10)
         {
-            Debug.Log("Flag = 0");
-            int newgameflag = PlayerPrefs.GetInt("newgame");
-            if (newgameflag == 1)//==1 means it is new game
-            {
-                Debug.Log("user newgameflag ==1");
-                user.PrintUser();
-                PlayerPrefs.SetInt("newgame", 0); //0 set to not new game
-                Read_Data();
-                user.HintPoints = 0;
-                user.PrintUser();
-            }
-            else
-            {
-                Read_Data();//this is NOT a new game so read data normally
-               
-              
-            }
-         
+            Debug.LogError("Flag <3");
+            Read_Data();
+            user.PrintUser();
+
             flag = flag + 1;
         }
 

@@ -558,10 +558,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_SetTriggerString();
 		Register_UnityEngine_Animator_SetTriggerString();
 
-		//System.Void UnityEngine.Animator::set_runtimeAnimatorController(UnityEngine.RuntimeAnimatorController)
-		void Register_UnityEngine_Animator_set_runtimeAnimatorController();
-		Register_UnityEngine_Animator_set_runtimeAnimatorController();
-
 		//UnityEngine.Avatar UnityEngine.Animator::get_avatar()
 		void Register_UnityEngine_Animator_get_avatar();
 		Register_UnityEngine_Animator_get_avatar();

@@ -121,7 +121,6 @@ UnityEngine.Animator::ResetTriggerString
 UnityEngine.Animator::SetFloatString
 UnityEngine.Animator::SetTriggerID
 UnityEngine.Animator::SetTriggerString
-UnityEngine.Animator::set_runtimeAnimatorController
 UnityEngine.Animator::get_avatar
 UnityEngine.Animator::get_runtimeAnimatorController
 UnityEngine.AnimatorClipInfo::InstanceIDToAnimationClipPPtr

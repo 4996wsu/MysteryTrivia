@@ -70,9 +70,9 @@ public class popupquestions : MonoBehaviour
     {
         //Gameobject newGameObject = Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 
-        Animator animator2 = popUpBox.AddComponent<Animator>();
+        //Animator animator2 = popUpBox.AddComponent<Animator>();
     
-        animator2.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Assets/MazeMerge/Scripts/Questions/PopupQuestion.controller");
+        //animator2.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Assets/MazeMerge/Scripts/Questions/PopupQuestion.controller");
  
     }
 
