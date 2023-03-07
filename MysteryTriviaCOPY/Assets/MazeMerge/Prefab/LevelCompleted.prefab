@@ -2049,11 +2049,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8322396545757145555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef0b942429975aa4cbb925ff2aa240e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f1610f3483d52b499f0a2965edf6537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelCompletePanel: {fileID: 5456070203771588426}
-  ResultText: {fileID: 2575247752648151724}
+  LevelCompletePanel: {fileID: 0}
+  ResultText: {fileID: 0}
 --- !u!1 &8803073131694903507
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class PlayFabTestAJ : MonoBehaviour
     private int sceneID = 0;
     private int difficulty = 0;
     private string category = "Math";
- 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +49,7 @@ public class PlayFabTestAJ : MonoBehaviour
         //usertest = new User();
 
         if (result.Data != null && result.Data.ContainsKey("Email") && result.Data.ContainsKey("HintPoints")
-            && result.Data.ContainsKey("Level") && result.Data.ContainsKey("MazeNumber") && result.Data.ContainsKey("Username")&& result.Data.ContainsKey("Category"))
+            && result.Data.ContainsKey("Level") && result.Data.ContainsKey("MazeNumber") && result.Data.ContainsKey("Username") && result.Data.ContainsKey("Category"))
         {
             usertest.setUser(result.Data["Email"].Value,
                 result.Data["Username"].Value,
@@ -86,7 +86,7 @@ public class PlayFabTestAJ : MonoBehaviour
         difficulty = difficult;
         PlayerPrefs.SetInt("Difficulty", difficulty);
         Debug.Log("Difficulty: " + difficulty);
-        
+
     }
     public void GetDifficulty()
     {
@@ -100,8 +100,35 @@ public class PlayFabTestAJ : MonoBehaviour
         category = ctgry;
         PlayerPrefs.SetString("Category", category);
         Debug.Log("Category: " + category);
-        SaveData();
+        //SaveData();
         sceneID = 5; //set to first scene
+    }
+    public void SetNewGame()
+    {
+        Debug.Log("USER: in savenewgame");
+        //usertest = new User();
+        //GetData();
+        category = PlayerPrefs.GetString("Category");
+        PlayerPrefs.SetInt("newgame", 1);
+        usertest.Category = category;
+        usertest.HintPoints = 0;
+        usertest.MazeNumber = 5;
+        usertest.PrintUser();
+        var request = new UpdateUserDataRequest
+        {
+            Data = new Dictionary<string, string>
+            {
+                {"Email", usertest.Email },
+                {"Username", usertest.Username },
+                {"HintPoints", usertest.HintPoints.ToString() },
+                {"Level", usertest.Level.ToString() },
+                {"MazeNumber", usertest.MazeNumber.ToString() },
+                {"Category", usertest.Category }
+            }
+        };
+        PlayFabClientAPI.UpdateUserData(request, OnDataSend, OnError);
+        usertest.PrintUser();
+
     }
     public void GetCategory()
     {

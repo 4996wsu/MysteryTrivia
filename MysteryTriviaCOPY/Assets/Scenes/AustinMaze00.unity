@@ -3656,7 +3656,7 @@ RectTransform:
   m_Children:
   - {fileID: 1593891588}
   m_Father: {fileID: 1084680125}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -11625,10 +11625,10 @@ RectTransform:
   m_Father: {fileID: 1084680125}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375, y: -252.2}
-  m_SizeDelta: {x: 114.0031, y: 59.896}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 28.4, y: 19.4}
+  m_SizeDelta: {x: 114.00311, y: 59.895996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743451512
 MonoBehaviour:
@@ -11693,7 +11693,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17715,8 +17715,8 @@ RectTransform:
   - {fileID: 1840039623}
   - {fileID: 539711633}
   - {fileID: 1127493462}
-  - {fileID: 272822032}
   - {fileID: 1996881501}
+  - {fileID: 272822032}
   - {fileID: 454102980}
   - {fileID: 743451511}
   m_Father: {fileID: 0}
@@ -17957,7 +17957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6898728787609897504, guid: f673a94e5a18d2342aadd297cd80328f, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6898728787609897504, guid: f673a94e5a18d2342aadd297cd80328f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -22877,7 +22877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.7, y: 3.9}
+  m_AnchoredPosition: {x: 8.700001, y: 3.899994}
   m_SizeDelta: {x: -50.4364, y: -37.3925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376161742

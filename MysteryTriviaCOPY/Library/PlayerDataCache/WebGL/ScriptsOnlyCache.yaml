@@ -50,14 +50,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -141,6 +133,9 @@ ScriptsOnlyBuild:
     methodName: SetCategory
   - assembly: Assembly-CSharp
     fullTypeName: PlayFabTestAJ
+    methodName: SetNewGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayFabTestAJ
     methodName: LoadScene
   - assembly: Assembly-CSharp
     fullTypeName: ChangeScene
@@ -150,10 +145,16 @@ ScriptsOnlyBuild:
     methodName: SetCategory
   - assembly: Assembly-CSharp
     fullTypeName: PlayFabTestAJ
+    methodName: SetNewGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayFabTestAJ
     methodName: LoadScene
   - assembly: Assembly-CSharp
     fullTypeName: PlayFabTestAJ
     methodName: SetCategory
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayFabTestAJ
+    methodName: SetNewGame
   - assembly: Assembly-CSharp
     fullTypeName: PlayFabTestAJ
     methodName: LoadScene
@@ -227,6 +228,9 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
   - assembly: Assembly-CSharp
@@ -269,6 +273,9 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
   - assembly: Assembly-CSharp
@@ -320,59 +327,8 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelComplete
-    methodName: NextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
@@ -428,59 +384,8 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelComplete
-    methodName: NextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
@@ -536,51 +441,51 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: audioController
     methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
     fullTypeName: LevelComplete
     methodName: NextLevel
   - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
   - assembly: Assembly-CSharp
@@ -592,6 +497,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
   - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
@@ -683,6 +594,9 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
     fullTypeName: LevelComplete
     methodName: NextLevel
   - assembly: Assembly-CSharp
@@ -697,6 +611,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: audioController
     methodName: ChangeVolume
@@ -764,59 +681,8 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelComplete
-    methodName: NextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
@@ -872,6 +738,18 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
     fullTypeName: audioController
     methodName: ChangeVolume
   - assembly: Assembly-CSharp
@@ -886,6 +764,282 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelComplete
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelComplete
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelComplete
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelComplete
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelComplete
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
@@ -941,113 +1095,8 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelComplete
-    methodName: NextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelComplete
-    methodName: NextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
@@ -1100,9 +1149,6 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: waitToggleSpeed
   - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
   - assembly: Assembly-CSharp
@@ -1114,6 +1160,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
   sceneClasses:
     Assets/Scenes/AustinMaze00.unity:
     - Class: 1
@@ -1165,29 +1217,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1256,29 +1310,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1333,17 +1389,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 10700}
+      Script: {instanceID: 10702}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1406,29 +1462,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 4738}
+      Script: {instanceID: 4740}
     - Class: 114
-      Script: {instanceID: 5138}
+      Script: {instanceID: 5140}
     - Class: 114
-      Script: {instanceID: 5264}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 5288}
     - Class: 114
-      Script: {instanceID: 5660}
+      Script: {instanceID: 5662}
     - Class: 114
-      Script: {instanceID: 6230}
+      Script: {instanceID: 6232}
     - Class: 114
-      Script: {instanceID: 6410}
+      Script: {instanceID: 6412}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1495,29 +1551,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1586,29 +1644,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1677,29 +1737,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1768,29 +1830,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1859,29 +1923,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1950,29 +2016,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2041,29 +2109,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2132,29 +2202,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2223,29 +2295,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2314,29 +2388,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2405,29 +2481,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2494,29 +2572,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2583,29 +2663,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2672,29 +2754,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2755,19 +2839,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 10700}
+      Script: {instanceID: 10702}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2824,19 +2908,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3926}
     - Class: 114
-      Script: {instanceID: 5264}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 6410}
+      Script: {instanceID: 6412}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2895,19 +2979,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 5264}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 6410}
+      Script: {instanceID: 6412}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2972,29 +3056,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 4640}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7722}
     - Class: 114
-      Script: {instanceID: 8182}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 8184}
     - Class: 114
-      Script: {instanceID: 9118}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 275146}
+      Script: {instanceID: 9120}
+    - Class: 114
+      Script: {instanceID: 9384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3518,6 +3604,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 65d91fd69409f18f2ddd8db705716242
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelComplete
   - hash:
       serializedVersion: 2
       Hash: cd1c93a552a813159175d818a844dc09
@@ -4520,12 +4612,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 65d91fd69409f18f2ddd8db705716242
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LevelComplete
   platform: 20
   scenePathNames:
   - Assets/Scenes/Login.unity
@@ -4550,4 +4636,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MazeMarrone2.unity
   - Assets/Scenes/MazeMarrone3.unity
   - Assets/Scenes/mazeMarrone4.unity
-  playerPath: C:/Users/Austi/Desktop/newBuild
+  playerPath: C:/Users/Austi/OneDrive/Desktop/LatestWeb

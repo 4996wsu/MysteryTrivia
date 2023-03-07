@@ -58,7 +58,23 @@ public class Player : MonoBehaviour
         if (flag == 0)
         {
             Debug.Log("Flag = 0");
-            Read_Data();
+            int newgameflag = PlayerPrefs.GetInt("newgame");
+            if (newgameflag == 1)//==1 means it is new game
+            {
+                Debug.Log("user newgameflag ==1");
+                user.PrintUser();
+                PlayerPrefs.SetInt("newgame", 0); //0 set to not new game
+                Read_Data();
+                user.HintPoints = 0;
+                user.PrintUser();
+            }
+            else
+            {
+                Read_Data();//this is NOT a new game so read data normally
+               
+              
+            }
+         
             flag = flag + 1;
         }
 
