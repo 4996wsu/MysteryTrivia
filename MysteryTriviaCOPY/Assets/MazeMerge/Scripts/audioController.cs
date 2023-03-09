@@ -8,8 +8,16 @@ public class audioController : MonoBehaviour
     [SerializeField] Slider volumeSlider;
     void update()
     {
-       if (Input.GetKey(KeyCode.Less))
+       if (Input.GetKey(KeyCode.Comma))
         {
+            volumeSlider.value=volumeSlider.value-0.01f;
+            AudioListener.volume = volumeSlider.value;
+            Debug.Log("<");
+        }if (Input.GetKey(KeyCode.Period))
+        {
+            volumeSlider.value=volumeSlider.value+0.01f;
+            AudioListener.volume = volumeSlider.value;
+            Debug.Log(">");
         }
 
     }

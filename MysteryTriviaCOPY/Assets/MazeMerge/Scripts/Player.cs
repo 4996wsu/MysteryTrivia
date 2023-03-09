@@ -36,6 +36,10 @@ public class Player : MonoBehaviour
     public TMP_Text check;
     popupquestions popq;
     User user;
+
+    public AudioSource explosion;
+    public AudioSource goodPickup;
+    public AudioSource whoosh;
     void Start()
     {
         //reference = FirebaseDatabase.DefaultInstance.RootReference;
@@ -48,41 +52,35 @@ public class Player : MonoBehaviour
         //StartCoroutine(doWait());
         //toggleSpeed();
         user = new User();
-        if (flag == 0)
-        {
-            Debug.LogError("Flag = 0");
-            int newgameflag = PlayerPrefs.GetInt("newgame");
-            if (newgameflag == 1)//==1 means it is new game
-            {
-                Debug.LogError("user newgameflag ==1");
-                user.PrintUser();
-                PlayerPrefs.SetInt("newgame", 0); //0 set to not new game
-                Read_Data();
-                user.HintPoints = 0;
-                Debug.LogError("user after newgameflag==1");
-                user.PrintUser();
-            }
-            else
-            {
-                Debug.LogError("ELSE read_data");
-                Read_Data();//this is NOT a new game so read data normally
-                user.PrintUser();
-            }
 
-            flag = flag + 1;
-        }
-
+        
+        
+ 
     }
  
     // Update is called once per frame
     void Update()
     {
-        if (flag <10)
+        if (flag == 0)
         {
-            Debug.LogError("Flag <3");
-            Read_Data();
-            user.PrintUser();
-
+            Debug.Log("Flag = 0");
+            int newgameflag = PlayerPrefs.GetInt("newgame");
+            if (newgameflag == 1)//==1 means it is new game
+            {
+                Debug.Log("user newgameflag ==1");
+                user.PrintUser();
+                PlayerPrefs.SetInt("newgame", 0); //0 set to not new game
+                Read_Data();
+                user.HintPoints = 0;
+                user.PrintUser();
+            }
+            else
+            {
+                Read_Data();//this is NOT a new game so read data normally
+               
+              
+            }
+         
             flag = flag + 1;
         }
 
@@ -258,6 +256,7 @@ public class Player : MonoBehaviour
             transform.eulerAngles = new Vector3(-x, y, z);
             transform.localScale = new Vector3(-x * 4, y * 4, z * 4);
             playeranimator.SetTrigger("death");
+            explosion.Play ();
        
         }
         if (collision.gameObject.tag == "Chest")
@@ -265,6 +264,7 @@ public class Player : MonoBehaviour
             Debug.Log("CHEST");
             points += 150;
             hintPoints.text = "Hint Points: " + points;
+            goodPickup.Play();
             Destroy(collision.gameObject);
         }
 
@@ -273,6 +273,7 @@ public class Player : MonoBehaviour
             flagBoost += 1;
             speed += 4.0f;
             Destroy(collision.gameObject);
+            whoosh.Play();
         }
         if (collision.gameObject.tag == "Finish")
         {
