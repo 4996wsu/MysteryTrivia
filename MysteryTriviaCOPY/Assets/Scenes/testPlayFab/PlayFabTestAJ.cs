@@ -17,10 +17,20 @@ public class PlayFabTestAJ : MonoBehaviour
     private int sceneID = 0;
     private int difficulty = 0;
     private string category = "Math";
-
+    private bool guest = true;
     // Start is called before the first frame update
     void Start()
     {
+        int guestlog = PlayerPrefs.GetInt("Guest");
+        if (guestlog == 0)
+        {
+            Debug.Log("Playing as Guest");
+            guest = true;
+        }
+        else
+        {
+            guest = false;
+        }
         usertest = new User();
         PlayerPrefs.SetInt("newgame", 0); //auto set newgame off
         GetData();
@@ -34,6 +44,10 @@ public class PlayFabTestAJ : MonoBehaviour
     }
     public void GetData()
     {
+        if (guest == true)
+        {
+            return;
+        }
         if (PlayFabClientAPI.IsClientLoggedIn() == false)
         {
             Debug.Log("NOT LOGGED ON");
@@ -48,7 +62,11 @@ public class PlayFabTestAJ : MonoBehaviour
     void OnDataRecieved(GetUserDataResult result)
     {
         //usertest = new User();
-
+        if (guest == true)
+        {
+            sceneID = 5;
+            return;
+        }
         if (result.Data != null && result.Data.ContainsKey("Email") && result.Data.ContainsKey("HintPoints")
             && result.Data.ContainsKey("Level") && result.Data.ContainsKey("MazeNumber") && result.Data.ContainsKey("Username") && result.Data.ContainsKey("Category"))
         {
@@ -106,6 +124,7 @@ public class PlayFabTestAJ : MonoBehaviour
     }
     public void SetNewGame()
     {
+      
         Debug.Log("USER: in savenewgame");
         //usertest = new User();
         //GetData();
@@ -115,6 +134,13 @@ public class PlayFabTestAJ : MonoBehaviour
         usertest.HintPoints = 0;
         usertest.MazeNumber = 5;
         usertest.PrintUser();
+
+        if (guest == true)
+        {
+            Debug.Log("GUEST ACTIVE");
+            return;
+        }
+
         var request = new UpdateUserDataRequest
         {
             Data = new Dictionary<string, string>
@@ -143,6 +169,10 @@ public class PlayFabTestAJ : MonoBehaviour
         category = PlayerPrefs.GetString("Category");
         usertest.Category = category;
         usertest.PrintUser();
+        if (guest == true)
+        {
+            return;
+        }
         var request = new UpdateUserDataRequest
         {
             Data = new Dictionary<string, string>

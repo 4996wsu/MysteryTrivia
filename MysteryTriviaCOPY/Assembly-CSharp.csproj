@@ -94,6 +94,7 @@
     <Compile Include="Assets\MazeMerge\Scripts\Player.cs" />
     <Compile Include="Assets\Scenes\MovingBackground.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scenes\testPlayFab\testjson.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
@@ -120,6 +121,7 @@
     <None Include="Assets\MazeMerge\Scripts\mathcorrectanswers.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\MazeMerge\shaders\walls.shader" />
+    <None Include="Assets\Resources\mathquestions.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\MazeMerge\Scripts\mathanswers.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -130,7 +132,10 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Fonts\misc\Bubble Bobble (Read First).txt" />
+    <None Include="Assets\Resources\mathanswers.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\MazeMerge\Sprites\fishenemies\License.txt" />
+    <None Include="Assets\Resources\mathcorrect.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\MazeMerge\Scripts\mathquestions.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

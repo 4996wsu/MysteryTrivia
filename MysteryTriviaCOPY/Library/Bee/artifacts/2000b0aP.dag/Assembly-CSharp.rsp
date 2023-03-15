@@ -315,6 +315,7 @@
 "Assets/PlayfabManager.cs"
 "Assets/Scenes/MovingBackground.cs"
 "Assets/Scenes/testPlayFab/PlayFabTestAJ.cs"
+"Assets/Scenes/testPlayFab/testjson.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

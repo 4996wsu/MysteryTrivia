@@ -1379,9 +1379,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Load Game
-
-'
+  m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2981,6 +2979,7 @@ MonoBehaviour:
   popUpBox: {fileID: 2097905592}
   animator: {fileID: 2097905598}
   popUpText: {fileID: 1589945225}
+  player1: {fileID: 0}
   answer1: {fileID: 1567999612}
   answer2: {fileID: 1529335565}
   answer3: {fileID: 39696601}
@@ -2990,6 +2989,7 @@ MonoBehaviour:
   answer3button: {fileID: 2046754045}
   answer4button: {fileID: 1428979604}
   QuestionBox: {fileID: 2014635395}
+  ChosenCategory: 
   answerbutton: {fileID: 142638201}
   correctAnswer: 
   unlock: 0

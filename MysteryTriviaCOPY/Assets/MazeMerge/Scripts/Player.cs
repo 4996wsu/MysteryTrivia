@@ -36,8 +36,19 @@ public class Player : MonoBehaviour
     public TMP_Text check;
     popupquestions popq;
     User user;
+    private bool guest = true;
     void Start()
     {
+        int guestlog = PlayerPrefs.GetInt("Guest");
+        if (guestlog == 0)
+        {
+            Debug.Log("Playing as Guest");
+            guest = true;
+        }
+        else
+        {
+            guest = false;
+        }
         //reference = FirebaseDatabase.DefaultInstance.RootReference;
         rb = GetComponent<Rigidbody2D>();
         polycolider = GetComponent<PolygonCollider2D>();
@@ -176,6 +187,12 @@ public class Player : MonoBehaviour
     }
     public void Read_Data()
     {
+        if(guest == true)
+        {
+            int guestpoints = PlayerPrefs.GetInt("guestpoints");
+            points = guestpoints;
+            return;
+        }
         if (PlayFabClientAPI.IsClientLoggedIn() == false)
         {
             Debug.Log("NOT LOGGED ON");
@@ -188,6 +205,10 @@ public class Player : MonoBehaviour
     }
     void OnDataRecieved(GetUserDataResult result)
     {
+        if(guest == true)
+        {
+            
+        }
         if (result.Data != null && result.Data.ContainsKey("Email") && result.Data.ContainsKey("HintPoints")
             && result.Data.ContainsKey("Level") && result.Data.ContainsKey("MazeNumber") && result.Data.ContainsKey("Username") && result.Data.ContainsKey("Category"))
         {
@@ -222,6 +243,12 @@ public class Player : MonoBehaviour
    
     public void SaveData()
     {
+        if (guest == true)
+        {
+            Debug.Log("GUEST: ");
+            PlayerPrefs.SetInt("guestpoints", points); //save guest points for next level
+            return;
+        }
         Debug.Log("USER: ");
         user.HintPoints = points;
         user.MazeNumber = SceneManager.GetActiveScene().buildIndex + 1;

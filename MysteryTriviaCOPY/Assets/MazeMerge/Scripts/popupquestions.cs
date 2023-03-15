@@ -5,15 +5,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.IO;
-
-
+using Newtonsoft.Json;
+using PlayFab;
+using PlayFab.ClientModels;
 public class popupquestions : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject popUpBox;
     public Animator animator;
     public TMP_Text popUpText; //text for question
-
+    public Player player1;
     public TMP_Text answer1;
     public TMP_Text answer2;
     public TMP_Text answer3;
@@ -23,22 +24,15 @@ public class popupquestions : MonoBehaviour
     public Button answer2button;
     public Button answer3button;
     public Button answer4button;
-
     public GameObject QuestionBox; //button object for holding question txt
 
     public string ChosenCategory = "";
     public GameObject answerbutton;
     public string correctAnswer = "";
     public bool unlock = false;
-
-    // Read math questions from text file
-    //string[] mathArrayQuestions = File.ReadAllLines("Assets/MazeMerge/Scripts/mathquestions.txt");
-
-    // Read math answers from text file
-    //string[] mathArrayAnswers = File.ReadAllLines("Assets/MazeMerge/Scripts/mathanswers.txt");
-
-    // Read correct answers from text file
-    //string[] mathCorrectAnswers = File.ReadAllLines("Assets/MazeMerge/Scripts/mathcorrectanswers.txt");
+    private int hintCount = 0;
+    private int flg = 0;
+   
 
     public string answer;
       string[] mathArrayQuestions = new string[] { "6x(-5)=?", "4x(-4)=?", "1% of 1=?", "32/100=?", "(1/3)x6=?",
@@ -47,10 +41,11 @@ public class popupquestions : MonoBehaviour
      "-20","30","25","-30",  "14","-16","-14","0",  "0.1","0.01","1","10", "0.032","3.2","32","0.32",   "1","2","4","3",
      "1",".1","5","0.01",    "4","8","16","10",     "3","2","1","6",       "-4","-2","-8","-6",         "-24","-4","32","-32"};
      string[] mathCorrectAnswers = new string[] { "-30", "-16", "0.01", "0.32", "2", "1", "16", "1", "-8", "-32" };
+    
     string[] historyarrayquestions = new string[] { "Which of these countries was the first to invent paper money?", "What was the feudal system?", "When was the airplane invented?",
-        "Who invented the airplane?", "How many terms did george washington serve as president?","Which of these cities is closest to the great pyramids of Giza?",
+        "Who invented the airplane?", "How many terms did George washington serve as president?","Which of these cities is closest to the great pyramids of Giza?",
         "Which of these women is considered a leader of the suffragate movement?",
-        "The Lousisana purchase was an agreement between the United States and which country?","Who was george Washington's vice president?", "Who invented the telegraph?"};
+        "The Lousisana purchase was an agreement between the United States and which country?","Who was George Washington's vice president?", "Who invented the telegraph?"};
     string[] historyarrayanswers = new string[] {
     "The United States","China","France","India",  "A party for the rich","A fast and efficent mail network.","A system of land ownership based on nobility.","A kind of inheritance.",  "1912.","1946.","1903.","1959.", "Pilatre De Rozier.","Daniel Bernoulli.","Orville Wright and Wilbur Wright.","Ferdinand von Zeppelin.",   "1","2","4","3",
     "Cairo.","Houston.","Cuzco.","Bangaledesh.",    "Gloria Steinem.","Jackie Kennedy.","Susan B. Anthony.","Harriet Tubman.",     "France.","England.","Portugal.","Spain.",       "Alexandar Hamilton.","John Adams.","Benjamin Franklin.","Henry Clay.",         "Benjaman franklin.","Nicolai tesla.","Alexandar Graham Bell.","Samuel Morse."};
@@ -68,25 +63,168 @@ public class popupquestions : MonoBehaviour
 
     void Start()
     {
-        //Gameobject newGameObject = Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-
-        //Animator animator2 = popUpBox.AddComponent<Animator>();
+        
+        Debug.Log("START");
     
-        //animator2.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Assets/MazeMerge/Scripts/Questions/PopupQuestion.controller");
- 
+        
+    
+        }
+
+    private void OnSucccuss(LoginResult obj)
+    {
+        Debug.Log("Logged on");
+    }
+    private void OnUpdateSuccess(UpdateUserDataResult obj)
+    {
+        Debug.Log("Success.");
+    }
+    private void OnFailure(PlayFabError obj)
+    {
+        Debug.Log(obj.GenerateErrorReport());
+    }
+    public void readJSON()
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest()
+        {
+            Keys = null,
+            PlayFabId = "9C6D28E7F942FE1F"
+
+        }, onDataRecieved, OnError);
+
+    }
+    void OnError(PlayFabError error)
+    {
+        Debug.Log("PlayFab Error," + error);
+    }
+
+    void onDataRecieved(GetUserDataResult result)
+    {
+        int i = 0;
+        int j = 0;
+        Debug.Log("Recieved data!");
+        if (result.Data != null && result.Data.ContainsKey("math"))
+        {
+            List<Question> questions = JsonConvert.DeserializeObject<List<Question>>(result.Data["math"].Value);
+            foreach (var item in questions)
+            {
+                mathArrayQuestions[i] = item.q;
+
+                mathArrayAnswers[j] = item.answer1;
+                mathArrayAnswers[j+1] = item.answer2;
+                mathArrayAnswers[j+2] = item.answer3;
+                mathArrayAnswers[j+3] = item.answer4;
+
+                mathCorrectAnswers[i] = item.answer;
+                i++;
+                j = j + 4;
+                item.Output();
+            }
+        }
+        for(i = 0; i < 10; i++)
+        {
+            Debug.Log("questions: " + mathArrayQuestions[i]);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (flg < 50)
+        {
+            flg++;
+        }
+        else if (flg == 50)
+        {
+            flg++;
+            readJSON();
+        }
     }
     public void PopUp(string text)
     {
         animator.SetTrigger("pop");
     }
+
+    public void checkPoints()
+    {
+        string currentQuestion;
+        string[] currentAnswers;
+
+        player1 = GameObject.Find("Player").GetComponent<Player>();
+        int points = player1.points;
+        int randomNum = Random.Range(0, 3); //rn 0 to number of questions
+
+        var hintButton = GameObject.Find("hint").GetComponent<Button>();
+
+        if (points < 200 || hintCount >= 3) // Disable hint button if points are less than 200 or hint button has been used 3 times
+        {
+            hintButton.interactable = false;
+            hintButton.GetComponent<Image>().color = Color.red;
+            hintCount = 0;
+        }
+        else
+        {
+            hintButton.interactable = true;
+            //hintButton.GetComponent<Image>().color = Color.green;
+        }
+
+        // If the hint button is clicked, subtract 200 points and destroy one wrong answer
+        if (hintButton.interactable)
+        {
+            currentQuestion = popUpText.text;
+            currentAnswers = new string[4];
+            currentAnswers[0] = answer1.text;
+            currentAnswers[1] = answer2.text;
+            currentAnswers[2] = answer3.text;
+            currentAnswers[3] = answer4.text;
+            Debug.Log(correctAnswer);
+            // subtract 200 points from the player's score
+            player1.points -= 200;
+            player1.hintPoints.text = player1.points.ToString();
+            hintCount++;
+
+            // Loop through the answer options and destroy one wrong answer
+            int randomNumber = Random.Range(0, englishArrayQuestions.Length); //rn 0 to number of questions
+            int index = randomNumber;
+
+
+
+            bool destroyed = false; // flag to check if an answer has been destroyed
+
+            // Loop through the answer options and destroy one wrong answer
+            if (answer1 != null && answer1.text != correctAnswer && !destroyed && answer1button.interactable)
+            {
+                //Destroy(answer1.gameObject);
+                answer1button.interactable = false;
+                answer1.text = "";
+                destroyed = true;
+            }
+            else if (answer2 != null && answer2.text != correctAnswer && answer2button.interactable)
+            {
+                //Destroy(answer2.gameObject);
+                answer2button.interactable = false;
+                answer2.text = "";
+                destroyed = true;
+            }
+            else if (answer3 != null && answer3.text != correctAnswer && answer3button.interactable)
+            {
+                //Destroy(answer3.gameObject);
+                answer3button.interactable = false;
+                answer3.text = "";
+                destroyed = true;
+            }
+            else if (answer4 != null && answer4.text != correctAnswer && answer4button.interactable)
+            {
+                //Destroy(answer4.gameObject);
+                answer4button.interactable = false;
+                answer4.text = "";
+                destroyed = true;
+            }
+         
+        }
+    }
     public void getQuestion()
     {
+        
         Debug.LogError("Error In getQuestion");
         ChosenCategory = PlayerPrefs.GetString("Category");
         btnReset();
@@ -142,6 +280,7 @@ public class popupquestions : MonoBehaviour
     }
     public void getAnswer(TMP_Text answertext)
     {
+  
         Debug.LogError("Error In answertext");
         Debug.Log("answer chosen: " + answertext.text);
         popUpText.text = answertext.text;
@@ -150,15 +289,19 @@ public class popupquestions : MonoBehaviour
             Debug.Log("CORRECT");
             unlock = true;
             QuestionBox.GetComponent<Image>().color = Color.green;
+          
         }
         else
         {
             Debug.Log("WRONG!!!!!!");
             QuestionBox.GetComponent<Image>().color = Color.red;
+      
         }
     }
     public void btnClick()
     {
+        var hintButton = GameObject.Find("hint").GetComponent<Button>();
+        hintButton.interactable = false;
         Debug.LogError("Error In btnclick");
         answer1button.interactable = false;
         answer2button.interactable = false;
@@ -167,10 +310,14 @@ public class popupquestions : MonoBehaviour
     }
     public void btnReset()
     {
+        var hintButton = GameObject.Find("hint").GetComponent<Button>();
         Debug.LogError("Error In btnreset");
         answer1button.interactable = true;
         answer2button.interactable = true;
         answer3button.interactable = true;
         answer4button.interactable = true;
+        hintCount = 0;
+        hintButton.interactable = true;
+        hintButton.GetComponent<Image>().color = Color.white;
     }
 }

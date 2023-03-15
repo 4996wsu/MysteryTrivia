@@ -175,8 +175,16 @@ public class PlayfabManager : MonoBehaviour
 
     void OnLoginSuccess(LoginResult result)
     {
+        Debug.Log("Login Success");
         messageText.text = "You have successfully logged in!";
         SceneManager.LoadScene("PlayMenu");
+
+    }
+    void OnGuestLoginSuccess(LoginResult result)
+    {
+        Debug.Log("Login Success");
+        messageText.text = "You have successfully logged in!";
+        SceneManager.LoadScene("Categories");
 
     }
 
@@ -195,6 +203,12 @@ public class PlayfabManager : MonoBehaviour
         messageText.color = Color.green;
         messageText.text = "Sent Successfully, please check registered email!";
         Debug.Log(error.GenerateErrorReport());
+    }
+    public void PlayAsGuest()
+    {
+        PlayerPrefs.SetInt("Guest", 0); //0 set to as logged on as guest
+        var request = new LoginWithCustomIDRequest() { TitleId = "47EFF", CustomId = "714738762171981" };
+        PlayFabClientAPI.LoginWithCustomID(request, OnGuestLoginSuccess, OnError);
     }
     public void CreateUserInPlayFab()
     {

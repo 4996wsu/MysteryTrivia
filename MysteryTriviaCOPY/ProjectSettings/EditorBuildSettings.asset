@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayMenu.unity
     guid: 7561dd978e8a62648a1cdba264a16954
   - enabled: 1
+    path: Assets/Scenes/AustinMaze4.unity
+    guid: ce4c736e536642246a32c9f910275bf7
+  - enabled: 1
+    path: Assets/Scenes/AustinMaze3.unity
+    guid: 7cf2c24b22b951948a8a1ff0eb58efff
+  - enabled: 1
     path: Assets/Scenes/AustinMaze00.unity
     guid: 9746a7af74321f142a95bbb42a921b4f
   - enabled: 1
