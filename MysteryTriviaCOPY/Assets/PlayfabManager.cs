@@ -175,6 +175,7 @@ public class PlayfabManager : MonoBehaviour
 
     void OnLoginSuccess(LoginResult result)
     {
+        PlayerPrefs.SetInt("Guest", 1); //0 set to as logged on as guest
         Debug.Log("Login Success");
         messageText.text = "You have successfully logged in!";
         SceneManager.LoadScene("PlayMenu");
@@ -183,6 +184,7 @@ public class PlayfabManager : MonoBehaviour
     void OnGuestLoginSuccess(LoginResult result)
     {
         Debug.Log("Login Success");
+        PlayerPrefs.SetInt("guestpoints", 0);
         messageText.text = "You have successfully logged in!";
         SceneManager.LoadScene("Categories");
 
