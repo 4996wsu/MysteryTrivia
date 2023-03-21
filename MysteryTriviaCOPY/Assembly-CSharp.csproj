@@ -41,8 +41,10 @@
      <Compile Include="Assets\MazeMerge\Quiz.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\MazeMerge\Scripts\LevelComplete.cs" />
      <Compile Include="Assets\ChangeInput.cs" />
      <Compile Include="Assets\MazeMerge\Questions.cs" />
+     <Compile Include="Assets\MazeMerge\Scripts\Player.cs" />
      <Compile Include="Assets\PlayfabManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
@@ -83,10 +85,8 @@
      <Compile Include="Assets\User.cs" />
      <Compile Include="Assets\MazeMerge\Answers.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Scenes\testPlayFab\PlayFabTestAJ.cs" />
-     <Compile Include="Assets\MazeMerge\Scripts\Player.cs" />
      <Compile Include="Assets\MazeMerge\Scripts\audioController.cs" />
-     <Compile Include="Assets\MazeMerge\Scripts\LevelComplete.cs" />
+     <Compile Include="Assets\Scenes\testPlayFab\PlayFabTestAJ.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
