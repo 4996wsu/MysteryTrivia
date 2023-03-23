@@ -1646,7 +1646,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7867178, y: 6.5090003, z: -10.05898}
+  m_LocalPosition: {x: -4.7867174, y: 0.7990003, z: -10.108979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1862,6 +1862,7 @@ MonoBehaviour:
   answerbutton: {fileID: 587751627}
   correctAnswer: 
   unlock: 0
+  TimerActive: 0
   answer: 
 --- !u!114 &545467680
 MonoBehaviour:
@@ -1920,9 +1921,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 561157644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f1610f3483d52b499f0a2965edf6537, type: 3}
+  m_Script: {fileID: 11500000, guid: cb96e68c0d00e7e4390fce4dc735dedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelCompletePanel: {fileID: 561157644}
+  ResultText: {fileID: 1323326603}
 --- !u!1001 &564287059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2749,6 +2752,7 @@ GameObject:
   - component: {fileID: 602695822}
   - component: {fileID: 602695824}
   - component: {fileID: 602695823}
+  - component: {fileID: 602695825}
   m_Layer: 5
   m_Name: audio
   m_TagString: Untagged
@@ -2765,7 +2769,7 @@ RectTransform:
   m_GameObject: {fileID: 602695821}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.41761044, y: 0.4607791, z: 0.9029379}
+  m_LocalScale: {x: 0.41761047, y: 0.46077913, z: 0.90293795}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 783738690}
@@ -2774,7 +2778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -35.299927, y: -34.899902}
+  m_AnchoredPosition: {x: -35.29989, y: -34.89991}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602695823
@@ -2815,6 +2819,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602695821}
   m_CullTransparentMesh: 1
+--- !u!114 &602695825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602695821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 602695823}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2145954750}
+        m_TargetAssemblyTypeName: audioController, Assembly-CSharp
+        m_MethodName: MuteToggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &621753121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4861,6 +4921,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &1323326603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2575247752648151724, guid: f673a94e5a18d2342aadd297cd80328f, type: 3}
+  m_PrefabInstance: {fileID: 499765451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1361165831
 GameObject:
   m_ObjectHideFlags: 0
@@ -7093,7 +7164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827517189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7867178, y: 6.5090003, z: -10.05898}
+  m_LocalPosition: {x: -4.7867174, y: 0.7990003, z: -10.108979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7585,9 +7656,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893932734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202d6d0e235fa4d45a459b05473be6b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3db99136d96cf974f87832daa0693f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playeranimator: {fileID: 0}
+  speed: 3
+  rotationSpeed: 0
+  points: 0
+  level: 0
+  mazenumber: 0
+  flag: 0
+  flagBoost: 0
+  hintPoints: {fileID: 504184616}
+  win: {fileID: 341228642}
+  popUp: popUp
+  isGameWon: 0
+  check: {fileID: 0}
+  explosion: {fileID: 0}
+  goodPickup: {fileID: 0}
+  whoosh: {fileID: 0}
 --- !u!212 &1893932739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7648,7 +7735,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893932734}
   m_LocalRotation: {x: -0, y: -0.006614308, z: -0, w: 0.9999782}
-  m_LocalPosition: {x: -0.93, y: 6.52, z: -0.06}
+  m_LocalPosition: {x: -4.93, y: 0.81, z: -0.11}
   m_LocalScale: {x: 0.32, y: 0.32, z: 0.63761}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8394,9 +8481,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2145954748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82f469d950be7a4989d86e89fcb814c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e27e2fb32f8b4b43940f49350587d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MuteButton: {fileID: 602695825}
+  MuteImage: {fileID: 21300000, guid: 0d31d2415d5603241962f012c04549a8, type: 3}
+  FullImage: {fileID: 21300000, guid: 8a4ae31b4b45ce141bc995c520651b12, type: 3}
+  muteState: 0
+  storevolume: 0
+  volumeSlider: {fileID: 2145954751}
 --- !u!114 &2145954751
 MonoBehaviour:
   m_ObjectHideFlags: 0

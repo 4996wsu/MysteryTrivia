@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 53685320}
   - component: {fileID: 53685322}
   - component: {fileID: 53685321}
+  - component: {fileID: 53685323}
   m_Layer: 5
   m_Name: audio
   m_TagString: Untagged
@@ -335,6 +336,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53685319}
   m_CullTransparentMesh: 1
+--- !u!114 &53685323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53685319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 53685321}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 189886546}
+        m_TargetAssemblyTypeName: audioController, Assembly-CSharp
+        m_MethodName: MuteToggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &57785605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,9 +2074,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 189886544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82f469d950be7a4989d86e89fcb814c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e27e2fb32f8b4b43940f49350587d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MuteButton: {fileID: 53685323}
+  MuteImage: {fileID: 21300000, guid: 0d31d2415d5603241962f012c04549a8, type: 3}
+  FullImage: {fileID: 21300000, guid: 8a4ae31b4b45ce141bc995c520651b12, type: 3}
+  muteState: 0
+  storevolume: 0
   volumeSlider: {fileID: 189886547}
 --- !u!114 &189886547
 MonoBehaviour:
@@ -4390,22 +4452,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6898728787609897504, guid: f673a94e5a18d2342aadd297cd80328f, type: 3}
   m_PrefabInstance: {fileID: 469940638}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &469940640 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2575247752648151724, guid: f673a94e5a18d2342aadd297cd80328f, type: 3}
-  m_PrefabInstance: {fileID: 469940638}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &469940641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5456070203771588426, guid: f673a94e5a18d2342aadd297cd80328f, type: 3}
-  m_PrefabInstance: {fileID: 469940638}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &469940642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8322396545757145555, guid: f673a94e5a18d2342aadd297cd80328f, type: 3}
@@ -4423,8 +4469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f1610f3483d52b499f0a2965edf6537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelCompletePanel: {fileID: 469940641}
-  ResultText: {fileID: 469940640}
 --- !u!1 &506043894
 GameObject:
   m_ObjectHideFlags: 0
@@ -6636,22 +6680,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 688310918}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202d6d0e235fa4d45a459b05473be6b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3db99136d96cf974f87832daa0693f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playeranimator: {fileID: 688310920}
+  playeranimator: {fileID: 0}
   speed: 3
-  rotationSpeed: 360
+  rotationSpeed: 0
   points: 0
   level: 0
   mazenumber: 0
   flag: 0
   flagBoost: 0
-  hintPoints: {fileID: 564894206}
-  win: {fileID: 1410269294}
+  hintPoints: {fileID: 0}
+  win: {fileID: 0}
   popUp: popUp
   isGameWon: 0
   check: {fileID: 0}
+  explosion: {fileID: 0}
+  goodPickup: {fileID: 0}
+  whoosh: {fileID: 0}
 --- !u!212 &688310923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13985,7 +14032,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 28.399998, y: 19.399988}
+  m_AnchoredPosition: {x: 28.400024, y: 19.399994}
   m_SizeDelta: {x: 114.00311, y: 59.895996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1367672217

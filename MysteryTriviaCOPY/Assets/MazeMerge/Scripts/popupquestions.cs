@@ -30,7 +30,9 @@ public class popupquestions : MonoBehaviour
     public GameObject answerbutton;
     public string correctAnswer = "";
     public bool unlock = false;
-
+    public bool TimerActive=false;
+    
+   
     // Read math questions from text file
     //string[] mathArrayQuestions = File.ReadAllLines("Assets/MazeMerge/Scripts/mathquestions.txt");
 
@@ -59,7 +61,7 @@ public class popupquestions : MonoBehaviour
     string[] englishArrayQuestions = new string[] { "I _____  the ball.", "___ house is on fire.", "My dog ___ a nap last night", "Yesterday josh  ____ with the ball", "What is the plural of man",
     "What is the plural of: The stinky socks were gross.","What is the plural of: The windows need to be open","Identify which word is spelled correctly","Identify which word is spelled correctly","The new restaurant ___ last month"};
     string[] englishArrayAnswers = new string[] {
-    "Throwed","Through","Threw","Throws",  "There","Their","They’re","Thare",  "Take","Takes","Took","Taken", "Ran","Run","Running","Runs",   "Guys","Mans","Boy","Men",
+    "Throwed","Through","Threw","Throws",  "There","Their","Theyï¿½re","Thare",  "Take","Takes","Took","Taken", "Ran","Run","Running","Runs",   "Guys","Mans","Boy","Men",
     "Stinky","Gross","Were","Socks",    "Windows","Need","The","Open",     "Adviece","Advice","Addvice","Edvice",       "Balioon","Balloon","Baloon","Belloon",         "Opening","Opens","Opened","Starting"};
     string[] englishCorrectAnswers = new string[] { "Threw", "Their", "Took", "Ran", "Men", "Socks", "Windows", "Advice", "Balloon", "Opened" };
 
@@ -77,13 +79,24 @@ public class popupquestions : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+   /* void Update()
     {
-
-    }
+     if(countdown>0&&TimerActive==true)     
+    {         
+    countdown -= Time.deltaTime;     
+    }  
+    else if(countdown<0&&TimerActive==true)
+    {
+        TimerActive=false;
+        countdown=countdownInitalize;
+        unlock = true;
+        
+    }   
+    }*/
     public void PopUp(string text)
     {
         animator.SetTrigger("pop");
+        TimerActive=true;
     }
     public void getQuestion()
     {
@@ -153,7 +166,7 @@ public class popupquestions : MonoBehaviour
         }
         else
         {
-            Debug.Log("WRONG!!!!!!");
+            Debug.Log("WRONG!");
             QuestionBox.GetComponent<Image>().color = Color.red;
         }
     }
