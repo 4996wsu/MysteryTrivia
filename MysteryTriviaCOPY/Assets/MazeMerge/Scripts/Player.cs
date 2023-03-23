@@ -44,6 +44,9 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Playing as Guest");
             guest = true;
+            PlayerPrefs.SetInt("Guest", 0); //0 set to as logged on as guest
+            var request = new LoginWithCustomIDRequest() { TitleId = "47EFF", CustomId = "714738762171981" };
+            PlayFabClientAPI.LoginWithCustomID(request, OnGuestLoginSuccess, OnError);
         }
         else
         {
@@ -84,7 +87,12 @@ public class Player : MonoBehaviour
         }
 
     }
+    void OnGuestLoginSuccess(LoginResult result)
+    {
+        Debug.Log("Guest Login Success");
+        
  
+    }
     // Update is called once per frame
     void Update()
     {
@@ -110,7 +118,7 @@ public class Player : MonoBehaviour
         {
             if (facingRight == true) //currently facing right and moving left
             {
-                Debug.Log("FLIP");
+                //Debug.Log("FLIP");
                 //spriteRenderer.flipX = false;
                 Vector3 theFlip = transform.localScale;
                 float x = theFlip.x;
@@ -190,6 +198,7 @@ public class Player : MonoBehaviour
         if(guest == true)
         {
             int guestpoints = PlayerPrefs.GetInt("guestpoints");
+            Debug.Log("Guest points: " + guestpoints);
             points = guestpoints;
             return;
         }
@@ -247,6 +256,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("GUEST: ");
             PlayerPrefs.SetInt("guestpoints", points); //save guest points for next level
+            Debug.Log("Guest points: at save" + points);
             return;
         }
         Debug.Log("USER: ");
@@ -332,28 +342,28 @@ public class Player : MonoBehaviour
                 popq.getQuestion();
             }
         }
-        if (collision.gameObject.tag == "Walls" || collision.gameObject.tag == "Lock")
+        if (collision.gameObject.tag == "Lock")
         {
         
             if (Input.GetKey(KeyCode.LeftArrow))
             {
           
-                transform.Translate(3 * Time.deltaTime, 0, 0);
+                transform.Translate(4 * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
       
-                transform.Translate(-3 * Time.deltaTime, 0, 0);
+                transform.Translate(-4 * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.UpArrow))
             {
         
-                transform.Translate(0, -3 * Time.deltaTime, 0);
+               transform.Translate(0, -4 * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
      
-                transform.Translate(0, 3 * Time.deltaTime, 0);
+               transform.Translate(0, 4 * Time.deltaTime, 0);
             }
         }
         

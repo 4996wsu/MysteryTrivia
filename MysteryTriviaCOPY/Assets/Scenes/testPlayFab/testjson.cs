@@ -93,7 +93,7 @@ public class testjson : MonoBehaviour
     {
         Debug.Log("Recieved data!");
         
-        if (result.Data != null && result.Data.ContainsKey("math"))
+        if (result.Data != null && result.Data.ContainsKey("Math"))
         {
             List<Question> questions = JsonConvert.DeserializeObject<List<Question>>(result.Data["math"].Value);
             foreach (var item in questions)

@@ -20,6 +20,7 @@ public class popupquestions : MonoBehaviour
     public TMP_Text answer3;
     public TMP_Text answer4;
 
+
     public Button answer1button;
     public Button answer2button;
     public Button answer3button;
@@ -35,13 +36,14 @@ public class popupquestions : MonoBehaviour
    
 
     public string answer;
-      string[] mathArrayQuestions = new string[] { "6x(-5)=?", "4x(-4)=?", "1% of 1=?", "32/100=?", "(1/3)x6=?",
-     "10% of 10=?","2x2x4=?","9/3/3=?","4x(-2)=?","8x(-4)=?"};
-     string[] mathArrayAnswers = new string[] {
+      string[] ArrayQuestions = new string[600];
+    string[] ArrayAnswers = new string[2400];
+    string[] CorrectAnswers = new string[600];
+    /* string[] mathArrayAnswers = new string[] {
      "-20","30","25","-30",  "14","-16","-14","0",  "0.1","0.01","1","10", "0.032","3.2","32","0.32",   "1","2","4","3",
      "1",".1","5","0.01",    "4","8","16","10",     "3","2","1","6",       "-4","-2","-8","-6",         "-24","-4","32","-32"};
      string[] mathCorrectAnswers = new string[] { "-30", "-16", "0.01", "0.32", "2", "1", "16", "1", "-8", "-32" };
-    
+    */
     string[] historyarrayquestions = new string[] { "Which of these countries was the first to invent paper money?", "What was the feudal system?", "When was the airplane invented?",
         "Who invented the airplane?", "How many terms did George washington serve as president?","Which of these cities is closest to the great pyramids of Giza?",
         "Which of these women is considered a leader of the suffragate movement?",
@@ -88,9 +90,7 @@ public class popupquestions : MonoBehaviour
         {
             Keys = null,
             PlayFabId = "9C6D28E7F942FE1F"
-
         }, onDataRecieved, OnError);
-
     }
     void OnError(PlayFabError error)
     {
@@ -102,28 +102,24 @@ public class popupquestions : MonoBehaviour
         int i = 0;
         int j = 0;
         Debug.Log("Recieved data!");
-        if (result.Data != null && result.Data.ContainsKey("math"))
+        ChosenCategory = PlayerPrefs.GetString("Category");
+        if (result.Data != null && result.Data.ContainsKey("Math") && result.Data.ContainsKey("English") && result.Data.ContainsKey("History"))
         {
-            List<Question> questions = JsonConvert.DeserializeObject<List<Question>>(result.Data["math"].Value);
+            List<Question> questions = JsonConvert.DeserializeObject<List<Question>>(result.Data[ChosenCategory].Value);
             foreach (var item in questions)
             {
-                mathArrayQuestions[i] = item.q;
-
-                mathArrayAnswers[j] = item.answer1;
-                mathArrayAnswers[j+1] = item.answer2;
-                mathArrayAnswers[j+2] = item.answer3;
-                mathArrayAnswers[j+3] = item.answer4;
-
-                mathCorrectAnswers[i] = item.answer;
+                ArrayQuestions[i] = item.q;
+                ArrayAnswers[j] = item.answer1;
+                ArrayAnswers[j+1] = item.answer2;
+                ArrayAnswers[j+2] = item.answer3;
+                ArrayAnswers[j+3] = item.answer4;
+                CorrectAnswers[i] = item.answer;
                 i++;
                 j = j + 4;
-                item.Output();
+                //item.Output();
             }
         }
-        for(i = 0; i < 10; i++)
-        {
-            Debug.Log("questions: " + mathArrayQuestions[i]);
-        }
+       
     }
 
     // Update is called once per frame
@@ -183,49 +179,46 @@ public class popupquestions : MonoBehaviour
             hintCount++;
 
             // Loop through the answer options and destroy one wrong answer
-            int randomNumber = Random.Range(0, englishArrayQuestions.Length); //rn 0 to number of questions
-            int index = randomNumber;
-
-
-
+        
             bool destroyed = false; // flag to check if an answer has been destroyed
+            while (destroyed == false)
+            {
+                int randomNumber = Random.Range(0, 4); //rn 0 to 3 for 4 available answers
+                if (answer1 != null && answer1.text != correctAnswer && !destroyed && answer1button.interactable && randomNumber == 0)
+                {
+                    //Destroy(answer1.gameObject);
+                    answer1button.interactable = false;
+                    answer1.text = "";
+                    destroyed = true;
+                }
+                else if (answer2 != null && answer2.text != correctAnswer && answer2button.interactable && randomNumber == 1)
+                {
+                    //Destroy(answer2.gameObject);
+                    answer2button.interactable = false;
+                    answer2.text = "";
+                    destroyed = true;
+                }
+                else if (answer3 != null && answer3.text != correctAnswer && answer3button.interactable && randomNumber == 2)
+                {
+                    //Destroy(answer3.gameObject);
+                    answer3button.interactable = false;
+                    answer3.text = "";
+                    destroyed = true;
+                }
+                else if (answer4 != null && answer4.text != correctAnswer && answer4button.interactable && randomNumber == 3)
+                {
+                    //Destroy(answer4.gameObject);
+                    answer4button.interactable = false;
+                    answer4.text = "";
+                    destroyed = true;
+                }
 
-            // Loop through the answer options and destroy one wrong answer
-            if (answer1 != null && answer1.text != correctAnswer && !destroyed && answer1button.interactable)
-            {
-                //Destroy(answer1.gameObject);
-                answer1button.interactable = false;
-                answer1.text = "";
-                destroyed = true;
             }
-            else if (answer2 != null && answer2.text != correctAnswer && answer2button.interactable)
-            {
-                //Destroy(answer2.gameObject);
-                answer2button.interactable = false;
-                answer2.text = "";
-                destroyed = true;
-            }
-            else if (answer3 != null && answer3.text != correctAnswer && answer3button.interactable)
-            {
-                //Destroy(answer3.gameObject);
-                answer3button.interactable = false;
-                answer3.text = "";
-                destroyed = true;
-            }
-            else if (answer4 != null && answer4.text != correctAnswer && answer4button.interactable)
-            {
-                //Destroy(answer4.gameObject);
-                answer4button.interactable = false;
-                answer4.text = "";
-                destroyed = true;
-            }
-         
         }
     }
     public void getQuestion()
     {
         
-        Debug.LogError("Error In getQuestion");
         ChosenCategory = PlayerPrefs.GetString("Category");
         btnReset();
         QuestionBox.GetComponent<Image>().color = Color.yellow;
@@ -236,47 +229,16 @@ public class popupquestions : MonoBehaviour
         int index = randomNumber;
         //index = 3?
         //start questions at 3 index and shows index*4 + 1,2,3 for answers
-        
-        if (ChosenCategory.Equals("Math"))
-        {
-
-            popUpText.text = mathArrayQuestions[index];
-            answer1.text = mathArrayAnswers[index * 4];
-            answer2.text = mathArrayAnswers[index * 4 + 1];
-            answer3.text = mathArrayAnswers[index * 4 + 2];
-            answer4.text = mathArrayAnswers[index * 4 + 3];
-            //show available answers
-            //set correct answer
-            correctAnswer = mathCorrectAnswers[index];
-            Debug.Log("answer: " + correctAnswer);
-            //now check answer in getAnswer
-        }
-        if (ChosenCategory.Equals("History"))
-        {
-            popUpText.text = historyarrayquestions[index];
-            answer1.text = historyarrayanswers[index * 4];
-            answer2.text = historyarrayanswers[index * 4 + 1];
-            answer3.text = historyarrayanswers[index * 4 + 2];
-            answer4.text = historyarrayanswers[index * 4 + 3];
-            //show available answers
-            //set correct answer
-            correctAnswer = historycorrectanswers[index];
-            Debug.Log("answer: " + correctAnswer);
-            //now check answer in getAnswer
-        }
-        if (ChosenCategory.Equals("English"))
-        {
-            popUpText.text = englishArrayQuestions[index];
-            answer1.text = englishArrayAnswers[index * 4];
-            answer2.text = englishArrayAnswers[index * 4 + 1];
-            answer3.text = englishArrayAnswers[index * 4 + 2];
-            answer4.text = englishArrayAnswers[index * 4 + 3];
-            //show available answers
-            //set correct answer
-            correctAnswer = englishCorrectAnswers[index];
-            Debug.Log("answer: " + correctAnswer);
-            //now check answer in getAnswer
-        }
+        popUpText.text = ArrayQuestions[index];
+        answer1.text = ArrayAnswers[index * 4];
+        answer2.text = ArrayAnswers[index * 4 + 1];
+        answer3.text = ArrayAnswers[index * 4 + 2];
+        answer4.text = ArrayAnswers[index * 4 + 3];
+        //show available answers
+        //set correct answer
+        correctAnswer = CorrectAnswers[index];
+        Debug.Log("answer: " + correctAnswer);
+        //now check answer in getAnswer
     }
     public void getAnswer(TMP_Text answertext)
     {
@@ -311,7 +273,7 @@ public class popupquestions : MonoBehaviour
     public void btnReset()
     {
         var hintButton = GameObject.Find("hint").GetComponent<Button>();
-        Debug.LogError("Error In btnreset");
+       
         answer1button.interactable = true;
         answer2button.interactable = true;
         answer3button.interactable = true;
