@@ -994,6 +994,8 @@ struct AudioClipProperties_tA1998D2E48E098A678BA0444F4B20AFCC0BA4F1F;
 struct AudioMixerProperties_t68944F868BFF8FF00D83BD4A860F430D9EF1AAAA;
 // UnityEngine.Timeline.AudioPlayableAsset
 struct AudioPlayableAsset_tD3B365847CADE16028968AFC2AAE4756CF534E0E;
+// UnityEngine.AudioSource
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // UnityEngine.Timeline.AudioTrack
 struct AudioTrack_t28A237BE8E15F2A1DE39A3DAC10AC0526D823FC4;
 // UnityEngine.AvatarMask
@@ -21310,18 +21312,22 @@ struct PixelPerfectCamera_t7B0849F4AB5E6399719BE7C3B330BCBBA3AAF7A9  : public Mo
 // PlayFabTestAJ
 struct PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// TMPro.TMP_InputField PlayFabTestAJ::codeInput
+	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___codeInput_4;
+	// TMPro.TMP_Text PlayFabTestAJ::messageText
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___messageText_5;
 	// User PlayFabTestAJ::usertest
-	User_t830E70FAB67A96176D2C105CB5BBDA86733559AB* ___usertest_4;
+	User_t830E70FAB67A96176D2C105CB5BBDA86733559AB* ___usertest_6;
 	// UnityEngine.UI.Button PlayFabTestAJ::LoadGame
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___LoadGame_5;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___LoadGame_7;
 	// System.Int32 PlayFabTestAJ::sceneID
-	int32_t ___sceneID_6;
+	int32_t ___sceneID_8;
 	// System.Int32 PlayFabTestAJ::difficulty
-	int32_t ___difficulty_7;
+	int32_t ___difficulty_9;
 	// System.String PlayFabTestAJ::category
-	String_t* ___category_8;
+	String_t* ___category_10;
 	// System.Boolean PlayFabTestAJ::guest
-	bool ___guest_9;
+	bool ___guest_11;
 };
 
 // Player
@@ -21369,6 +21375,12 @@ struct Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74  : public MonoBehaviour_
 	User_t830E70FAB67A96176D2C105CB5BBDA86733559AB* ___user_23;
 	// System.Boolean Player::guest
 	bool ___guest_24;
+	// UnityEngine.AudioSource Player::explosion
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___explosion_25;
+	// UnityEngine.AudioSource Player::goodPickup
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___goodPickup_26;
+	// UnityEngine.AudioSource Player::whoosh
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___whoosh_27;
 };
 
 // PlayfabManager
@@ -21828,8 +21840,18 @@ struct WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E  : public MonoB
 // audioController
 struct audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// UnityEngine.UI.Button audioController::MuteButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___MuteButton_4;
+	// UnityEngine.Sprite audioController::MuteImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___MuteImage_5;
+	// UnityEngine.Sprite audioController::FullImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___FullImage_6;
+	// System.Int32 audioController::muteState
+	int32_t ___muteState_7;
+	// System.Single audioController::storevolume
+	float ___storevolume_8;
 	// UnityEngine.UI.Slider audioController::volumeSlider
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___volumeSlider_4;
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___volumeSlider_9;
 };
 
 // popupquestions
@@ -21873,26 +21895,18 @@ struct popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61  : public MonoBe
 	int32_t ___hintCount_21;
 	// System.Int32 popupquestions::flg
 	int32_t ___flg_22;
+	// System.Int32 popupquestions::total
+	int32_t ___total_23;
+	// System.Int32 popupquestions::start
+	int32_t ___start_24;
 	// System.String popupquestions::answer
-	String_t* ___answer_23;
-	// System.String[] popupquestions::mathArrayQuestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mathArrayQuestions_24;
-	// System.String[] popupquestions::mathArrayAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mathArrayAnswers_25;
-	// System.String[] popupquestions::mathCorrectAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mathCorrectAnswers_26;
-	// System.String[] popupquestions::historyarrayquestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___historyarrayquestions_27;
-	// System.String[] popupquestions::historyarrayanswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___historyarrayanswers_28;
-	// System.String[] popupquestions::historycorrectanswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___historycorrectanswers_29;
-	// System.String[] popupquestions::englishArrayQuestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___englishArrayQuestions_30;
-	// System.String[] popupquestions::englishArrayAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___englishArrayAnswers_31;
-	// System.String[] popupquestions::englishCorrectAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___englishCorrectAnswers_32;
+	String_t* ___answer_25;
+	// System.String[] popupquestions::ArrayQuestions
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayQuestions_26;
+	// System.String[] popupquestions::ArrayAnswers
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayAnswers_27;
+	// System.String[] popupquestions::CorrectAnswers
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___CorrectAnswers_28;
 };
 
 // UnityEngine.UI.Dropdown/DropdownItem
@@ -38123,18 +38137,18 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8226[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8227[4] = 
 {
 	static_cast<int32_t>(offsetof(Quiz_t6C26E41E999AF5DEF8E408C7F49A566A4A92D19C, ___QnA_4)),static_cast<int32_t>(offsetof(Quiz_t6C26E41E999AF5DEF8E408C7F49A566A4A92D19C, ___options_5)),static_cast<int32_t>(offsetof(Quiz_t6C26E41E999AF5DEF8E408C7F49A566A4A92D19C, ___currentQuestion_6)),static_cast<int32_t>(offsetof(Quiz_t6C26E41E999AF5DEF8E408C7F49A566A4A92D19C, ___QuestionTxt_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8228[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8228[6] = 
 {
-	static_cast<int32_t>(offsetof(audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D, ___volumeSlider_4)),};
+	static_cast<int32_t>(offsetof(audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D, ___MuteButton_4)),static_cast<int32_t>(offsetof(audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D, ___MuteImage_5)),static_cast<int32_t>(offsetof(audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D, ___FullImage_6)),static_cast<int32_t>(offsetof(audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D, ___muteState_7)),static_cast<int32_t>(offsetof(audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D, ___storevolume_8)),static_cast<int32_t>(offsetof(audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D, ___volumeSlider_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8229[2] = 
 {
 	static_cast<int32_t>(offsetof(LevelComplete_t86DC0DA93C81F3C433559F27DD6C1B15E3021532, ___LevelCompletePanel_4)),static_cast<int32_t>(offsetof(LevelComplete_t86DC0DA93C81F3C433559F27DD6C1B15E3021532, ___ResultText_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8230[21] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8230[24] = 
 {
-	static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___playeranimator_4)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___speed_5)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rotationSpeed_6)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___polycolider_7)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rb_8)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___spriteRenderer_9)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___points_10)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___level_11)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___mazenumber_12)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___flag_13)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___flagBoost_14)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___facingRight_15)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___froze_16)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___hintPoints_17)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___win_18)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___popUp_19)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___isGameWon_20)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___check_21)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___popq_22)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___user_23)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___guest_24)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8231[29] = 
+	static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___playeranimator_4)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___speed_5)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rotationSpeed_6)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___polycolider_7)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rb_8)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___spriteRenderer_9)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___points_10)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___level_11)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___mazenumber_12)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___flag_13)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___flagBoost_14)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___facingRight_15)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___froze_16)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___hintPoints_17)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___win_18)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___popUp_19)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___isGameWon_20)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___check_21)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___popq_22)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___user_23)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___guest_24)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___explosion_25)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___goodPickup_26)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___whoosh_27)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8231[25] = 
 {
-	static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpBox_4)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___animator_5)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpText_6)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___player1_7)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1_8)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2_9)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3_10)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4_11)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1button_12)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2button_13)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3button_14)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4button_15)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___QuestionBox_16)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ChosenCategory_17)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answerbutton_18)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___correctAnswer_19)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___unlock_20)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___hintCount_21)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___flg_22)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer_23)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___mathArrayQuestions_24)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___mathArrayAnswers_25)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___mathCorrectAnswers_26)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___historyarrayquestions_27)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___historyarrayanswers_28)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___historycorrectanswers_29)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___englishArrayQuestions_30)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___englishArrayAnswers_31)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___englishCorrectAnswers_32)),};
+	static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpBox_4)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___animator_5)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpText_6)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___player1_7)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1_8)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2_9)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3_10)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4_11)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1button_12)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2button_13)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3button_14)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4button_15)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___QuestionBox_16)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ChosenCategory_17)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answerbutton_18)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___correctAnswer_19)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___unlock_20)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___hintCount_21)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___flg_22)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___total_23)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___start_24)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer_25)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ArrayQuestions_26)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ArrayAnswers_27)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___CorrectAnswers_28)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8232[3] = 
 {
 	static_cast<int32_t>(offsetof(MovingBackground_tD48A0A7758B27C9D87C59CAEE3D4BDD2E6F53EDC, ___scrollSpeed_4)),static_cast<int32_t>(offsetof(MovingBackground_tD48A0A7758B27C9D87C59CAEE3D4BDD2E6F53EDC, ___offset_5)),static_cast<int32_t>(offsetof(MovingBackground_tD48A0A7758B27C9D87C59CAEE3D4BDD2E6F53EDC, ___mat_6)),};
@@ -38147,9 +38161,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8234[12] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8235[2] = 
 {
 	static_cast<int32_t>(offsetof(Scroller_tE9ACC7A8D6D9C55273974DCDA16ACCCDB8D6F206, ___scrollSpeed_4)),static_cast<int32_t>(offsetof(Scroller_tE9ACC7A8D6D9C55273974DCDA16ACCCDB8D6F206, ___rend_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8236[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8236[8] = 
 {
-	static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___usertest_4)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___LoadGame_5)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___sceneID_6)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___difficulty_7)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___category_8)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___guest_9)),};
+	static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___codeInput_4)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___messageText_5)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___usertest_6)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___LoadGame_7)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___sceneID_8)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___difficulty_9)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___category_10)),static_cast<int32_t>(offsetof(PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32, ___guest_11)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8237[6] = 
 {
 	static_cast<int32_t>(offsetof(Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E, ___q_0)),static_cast<int32_t>(offsetof(Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E, ___answer1_1)),static_cast<int32_t>(offsetof(Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E, ___answer2_2)),static_cast<int32_t>(offsetof(Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E, ___answer3_3)),static_cast<int32_t>(offsetof(Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E, ___answer4_4)),static_cast<int32_t>(offsetof(Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E, ___answer_5)),};

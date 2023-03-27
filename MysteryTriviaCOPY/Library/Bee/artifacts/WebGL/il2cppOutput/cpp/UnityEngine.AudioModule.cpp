@@ -202,6 +202,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AudioClip_get_length_m6102CB29AF65988797452
 IL2CPP_EXTERN_C const RuntimeMethod* AudioClip_get_samples_mDEA01CA75E7DEA0F8D480E4AF97FB96085BCF38E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AudioConfigurationChangeHandler_Invoke_m4DC27DD11512481B60071B20284E6886DAE54DE2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AudioConfigurationChangeHandler__ctor_mA9827AB9472EC8EE0A0F0FC24EBC06B4740DD944_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AudioListener_get_volume_m8EAB8FBA127A53E689C1D8C1857781070381974A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AudioListener_set_volume_m72BAF2D558A5449091A59630EBF48095DEB4C721_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AudioMixerPlayable_CreateAudioMixerPlayableInternal_mB91DD585A6A2903F01F49719CA0045C8727B5AA9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AudioMixerPlayable_CreateHandle_mCA2A6EF1CC490A8E59C8EE2020D3304D66B96852_RuntimeMethod_var;
@@ -228,6 +229,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* AudioSampleProvider_InvokeSampleFramesOverf
 IL2CPP_EXTERN_C const RuntimeMethod* AudioSettings_InvokeOnAudioConfigurationChanged_m8273D3AEB24F4C3E374238B6F699BE6696808E85_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AudioSettings_InvokeOnAudioSystemShuttingDown_m1B9895D60B3267EBDEC69B9169730DBAD8325E90_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AudioSettings_InvokeOnAudioSystemStartedUp_m7FE042936237E5BDCB20299D8C4CF583B661468C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PCMReaderCallback_Invoke_m76784C690C36B513E2AA5B0E4FD9831B2C7E5152_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PCMReaderCallback__ctor_mF621B6CC1A4BA6525190C5037401CF2FD5C0CF28_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PCMSetPositionCallback_Invoke_m434D4F02FA25F91DF6199EC5A799C551C7F93702_RuntimeMethod_var;
@@ -353,6 +356,13 @@ struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B
 {
 	// System.UInt32 System.UInt32::m_value
 	uint32_t ___m_value_0;
+};
+
+// System.UInt64
+struct UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF 
+{
+	// System.UInt64 System.UInt64::m_value
+	uint64_t ___m_value_0;
 };
 
 // System.Void
@@ -811,6 +821,10 @@ struct IntPtr_t_StaticFields
 
 // System.UInt32
 
+// System.UInt64
+
+// System.UInt64
+
 // System.Void
 
 // System.Void
@@ -1078,6 +1092,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PCMReaderCallback_Invoke_m76784C690C36B513E2AA5B0E4FD9831B2C7E5152_inline (PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_data, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioClip/PCMSetPositionCallback::Invoke(System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PCMSetPositionCallback_Invoke_m434D4F02FA25F91DF6199EC5A799C551C7F93702_inline (PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072* __this, int32_t ___0_position, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___0_source, uint64_t ___1_delay, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Experimental.Audio.AudioSampleProvider/SampleFramesHandler::Invoke(UnityEngine.Experimental.Audio.AudioSampleProvider,System.UInt32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SampleFramesHandler_Invoke_m478D5645634B8C734E58B59CF7750797FC54F1BC_inline (SampleFramesHandler_tFE84FF9BBCEFB880D46227188F375BEF680AAA30* __this, AudioSampleProvider_t602353124A2F6F2AEC38E56C3C21932344F712E2* ___0_provider, uint32_t ___1_sampleFrameCount, const RuntimeMethod* method) ;
 // UnityEngine.Playables.PlayableHandle UnityEngine.Audio.AudioClipPlayable::CreateHandle(UnityEngine.Playables.PlayableGraph,UnityEngine.AudioClip,System.Boolean)
@@ -1783,6 +1799,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PCMSetPositionCallback_Invoke_m434D4F02F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Single UnityEngine.AudioListener::get_volume()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AudioListener_get_volume_m8EAB8FBA127A53E689C1D8C1857781070381974A (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioListener_get_volume_m8EAB8FBA127A53E689C1D8C1857781070381974A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StackTraceSentry _stackTraceSentry(AudioListener_get_volume_m8EAB8FBA127A53E689C1D8C1857781070381974A_RuntimeMethod_var);
+	typedef float (*AudioListener_get_volume_m8EAB8FBA127A53E689C1D8C1857781070381974A_ftn) ();
+	static AudioListener_get_volume_m8EAB8FBA127A53E689C1D8C1857781070381974A_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioListener_get_volume_m8EAB8FBA127A53E689C1D8C1857781070381974A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioListener::get_volume()");
+	float icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
 // System.Void UnityEngine.AudioListener::set_volume(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioListener_set_volume_m72BAF2D558A5449091A59630EBF48095DEB4C721 (float ___0_value, const RuntimeMethod* method) 
 {
@@ -1807,6 +1840,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioListener_set_volume_m72BAF2D558A544
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___0_source, uint64_t ___1_delay, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StackTraceSentry _stackTraceSentry(AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960_RuntimeMethod_var);
+	typedef void (*AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960_ftn) (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299*, uint64_t);
+	static AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)");
+	_il2cpp_icall_func(___0_source, ___1_delay);
+}
+// System.Void UnityEngine.AudioSource::Play()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StackTraceSentry _stackTraceSentry(AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3_RuntimeMethod_var);
+	{
+		AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960(__this, ((int64_t)0), NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

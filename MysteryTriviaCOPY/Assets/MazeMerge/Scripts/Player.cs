@@ -37,6 +37,10 @@ public class Player : MonoBehaviour
     popupquestions popq;
     User user;
     private bool guest = true;
+
+    public AudioSource explosion;
+    public AudioSource goodPickup;
+    public AudioSource whoosh;
     void Start()
     {
         int guestlog = PlayerPrefs.GetInt("Guest");
@@ -234,7 +238,7 @@ public class Player : MonoBehaviour
         }
         if (user.MazeNumber == 0)
         {
-            user.MazeNumber = 5; //set to start of maze 1 if this is the first game
+            user.MazeNumber = 6; //set to start of maze 1 if this is the first game
         }
         PlayerPrefs.SetString("Category", user.Category);
         points = user.HintPoints;
@@ -295,14 +299,17 @@ public class Player : MonoBehaviour
             transform.eulerAngles = new Vector3(-x, y, z);
             transform.localScale = new Vector3(-x * 4, y * 4, z * 4);
             playeranimator.SetTrigger("death");
-       
+            explosion.Play();
+
         }
         if (collision.gameObject.tag == "Chest")
         {
             Debug.Log("CHEST");
             points += 150;
             hintPoints.text = "Hint Points: " + points;
+            goodPickup.Play();
             Destroy(collision.gameObject);
+
         }
 
         if (collision.gameObject.tag == "Boost")
@@ -310,6 +317,7 @@ public class Player : MonoBehaviour
             flagBoost += 1;
             speed += 4.0f;
             Destroy(collision.gameObject);
+            whoosh.Play();
         }
         if (collision.gameObject.tag == "Finish")
         {

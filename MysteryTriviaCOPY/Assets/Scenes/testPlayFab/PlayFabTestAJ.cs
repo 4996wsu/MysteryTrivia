@@ -12,10 +12,12 @@ using Unity.VisualScripting;
 
 public class PlayFabTestAJ : MonoBehaviour
 {
+    [SerializeField] TMP_InputField codeInput;
+    [SerializeField] TMP_Text messageText;
     User usertest;
     private Button LoadGame;
     private int sceneID = 0;
-    private int difficulty = 0;
+    private int difficulty = 1;
     private string category = "Math";
     private bool guest = true;
     // Start is called before the first frame update
@@ -42,6 +44,37 @@ public class PlayFabTestAJ : MonoBehaviour
         Debug.Log("Scene ID: " + sceneID);
         SceneManager.LoadScene(sceneID);
     }
+    public void CheckCode(string code)
+    {
+        code = codeInput.text;
+        PlayerPrefs.SetString("codeCategory", code);
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest()
+        {
+            Keys = null,
+            PlayFabId = "9C6D28E7F942FE1F"
+        }, CheckData, OnError);
+    }
+    void CheckData(GetUserDataResult result)
+    {
+        
+        string codeCategory = PlayerPrefs.GetString("codeCategory");
+        Debug.Log("Checking code !" + codeCategory);
+        if (result.Data != null && result.Data.ContainsKey(codeCategory))
+        {
+            Debug.Log("Contains code: " + codeCategory);
+            PlayerPrefs.SetString("Category", codeCategory);
+            SetCategory(codeCategory);
+            SetNewGame();
+            SetDifficulty(-1); //-1 will represent unknown difficulty as this is for custom questions, generally the teacher wont have separate levels of difficulty
+            LoadScene();
+
+        }
+        else
+        {
+            Debug.Log("Error getting user data");
+            messageText.text = "Error invalid code!";
+        }
+    }
     public void GetData()
     {
         if (guest == true)
@@ -64,7 +97,7 @@ public class PlayFabTestAJ : MonoBehaviour
         //usertest = new User();
         if (guest == true)
         {
-            sceneID = 5;
+            sceneID = 6;
             return;
         }
         if (result.Data != null && result.Data.ContainsKey("Email") && result.Data.ContainsKey("HintPoints")
@@ -86,7 +119,7 @@ public class PlayFabTestAJ : MonoBehaviour
         {
             LoadGame = GameObject.FindGameObjectWithTag("LoadGame").GetComponent<Button>();
             LoadGame.interactable = false;
-            usertest.MazeNumber = 5; //set to start of maze 1
+            usertest.MazeNumber = 6; //set to start of maze 1
         }
         sceneID = usertest.MazeNumber;
         usertest.PrintUser();
@@ -120,7 +153,18 @@ public class PlayFabTestAJ : MonoBehaviour
         PlayerPrefs.SetString("Category", category);
         Debug.Log("Category: " + category);
         //SaveData();
-        sceneID = 5; //set to first scene
+        sceneID = 6; //set to first scene
+    }
+
+    public void loadTeacherScene()
+    {
+
+        SceneManager.LoadScene("Teachers");
+    }
+    public void backCategoryScene()
+    {
+
+        SceneManager.LoadScene("Categories");
     }
     public void SetNewGame()
     {
@@ -132,7 +176,8 @@ public class PlayFabTestAJ : MonoBehaviour
         PlayerPrefs.SetInt("newgame", 1);
         usertest.Category = category;
         usertest.HintPoints = 0;
-        usertest.MazeNumber = 5;
+        usertest.MazeNumber = 6;
+        usertest.Level = difficulty;
         usertest.PrintUser();
 
         if (guest == true)

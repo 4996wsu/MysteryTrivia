@@ -13,13 +13,16 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Categories.unity
-    guid: 2b83670125245f44e8b83f65b9ea7922
+    guid: b089234f5329b4246972dba3e6de0512
   - enabled: 1
     path: Assets/Scenes/ResetPassword.unity
     guid: d91dff5fab52a354cb2466f99b949ffa
   - enabled: 1
     path: Assets/Scenes/PlayMenu.unity
     guid: 7561dd978e8a62648a1cdba264a16954
+  - enabled: 1
+    path: Assets/Scenes/Teachers.unity
+    guid: c4bd6ec2b284fe14fbe4d7269ad01047
   - enabled: 1
     path: Assets/Scenes/AustinMaze00.unity
     guid: 9746a7af74321f142a95bbb42a921b4f

@@ -1278,6 +1278,8 @@ struct AudioMixerProperties_t68944F868BFF8FF00D83BD4A860F430D9EF1AAAA;
 struct AudioPlayableAsset_tD3B365847CADE16028968AFC2AAE4756CF534E0E;
 // UnityEngine.Experimental.Audio.AudioSampleProvider
 struct AudioSampleProvider_t602353124A2F6F2AEC38E56C3C21932344F712E2;
+// UnityEngine.AudioSource
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // UnityEngine.Timeline.AudioTrack
 struct AudioTrack_t28A237BE8E15F2A1DE39A3DAC10AC0526D823FC4;
 // System.Data.AutoIncrementValue
@@ -34567,18 +34569,22 @@ struct PixelPerfectCamera_t7B0849F4AB5E6399719BE7C3B330BCBBA3AAF7A9  : public Mo
 // PlayFabTestAJ
 struct PlayFabTestAJ_tAA232CC10C91C387CFED42D813301EF4F6F3BB32  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// TMPro.TMP_InputField PlayFabTestAJ::codeInput
+	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___codeInput_4;
+	// TMPro.TMP_Text PlayFabTestAJ::messageText
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___messageText_5;
 	// User PlayFabTestAJ::usertest
-	User_t830E70FAB67A96176D2C105CB5BBDA86733559AB* ___usertest_4;
+	User_t830E70FAB67A96176D2C105CB5BBDA86733559AB* ___usertest_6;
 	// UnityEngine.UI.Button PlayFabTestAJ::LoadGame
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___LoadGame_5;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___LoadGame_7;
 	// System.Int32 PlayFabTestAJ::sceneID
-	int32_t ___sceneID_6;
+	int32_t ___sceneID_8;
 	// System.Int32 PlayFabTestAJ::difficulty
-	int32_t ___difficulty_7;
+	int32_t ___difficulty_9;
 	// System.String PlayFabTestAJ::category
-	String_t* ___category_8;
+	String_t* ___category_10;
 	// System.Boolean PlayFabTestAJ::guest
-	bool ___guest_9;
+	bool ___guest_11;
 };
 
 // UnityEngine.Timeline.PlayableTrack
@@ -34631,6 +34637,12 @@ struct Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74  : public MonoBehaviour_
 	User_t830E70FAB67A96176D2C105CB5BBDA86733559AB* ___user_23;
 	// System.Boolean Player::guest
 	bool ___guest_24;
+	// UnityEngine.AudioSource Player::explosion
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___explosion_25;
+	// UnityEngine.AudioSource Player::goodPickup
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___goodPickup_26;
+	// UnityEngine.AudioSource Player::whoosh
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___whoosh_27;
 };
 
 // PlayfabManager
@@ -35120,8 +35132,18 @@ struct WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E  : public MonoB
 // audioController
 struct audioController_tDF98E2F699216E3F029B67E6B4C4C38A9ECEED3D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// UnityEngine.UI.Button audioController::MuteButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___MuteButton_4;
+	// UnityEngine.Sprite audioController::MuteImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___MuteImage_5;
+	// UnityEngine.Sprite audioController::FullImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___FullImage_6;
+	// System.Int32 audioController::muteState
+	int32_t ___muteState_7;
+	// System.Single audioController::storevolume
+	float ___storevolume_8;
 	// UnityEngine.UI.Slider audioController::volumeSlider
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___volumeSlider_4;
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___volumeSlider_9;
 };
 
 // popupquestions
@@ -35165,26 +35187,18 @@ struct popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61  : public MonoBe
 	int32_t ___hintCount_21;
 	// System.Int32 popupquestions::flg
 	int32_t ___flg_22;
+	// System.Int32 popupquestions::total
+	int32_t ___total_23;
+	// System.Int32 popupquestions::start
+	int32_t ___start_24;
 	// System.String popupquestions::answer
-	String_t* ___answer_23;
-	// System.String[] popupquestions::mathArrayQuestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mathArrayQuestions_24;
-	// System.String[] popupquestions::mathArrayAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mathArrayAnswers_25;
-	// System.String[] popupquestions::mathCorrectAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mathCorrectAnswers_26;
-	// System.String[] popupquestions::historyarrayquestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___historyarrayquestions_27;
-	// System.String[] popupquestions::historyarrayanswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___historyarrayanswers_28;
-	// System.String[] popupquestions::historycorrectanswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___historycorrectanswers_29;
-	// System.String[] popupquestions::englishArrayQuestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___englishArrayQuestions_30;
-	// System.String[] popupquestions::englishArrayAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___englishArrayAnswers_31;
-	// System.String[] popupquestions::englishCorrectAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___englishCorrectAnswers_32;
+	String_t* ___answer_25;
+	// System.String[] popupquestions::ArrayQuestions
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayQuestions_26;
+	// System.String[] popupquestions::ArrayAnswers
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayAnswers_27;
+	// System.String[] popupquestions::CorrectAnswers
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___CorrectAnswers_28;
 };
 
 // testjson
