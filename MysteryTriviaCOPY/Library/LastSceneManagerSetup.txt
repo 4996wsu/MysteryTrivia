@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/mazeMarrone7.unity
-=======
-- path: Assets/Scenes/Categories.unity
->>>>>>> main
+- path: Assets/Scenes/AustinMaze3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
