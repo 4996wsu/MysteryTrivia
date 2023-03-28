@@ -1,6 +1,7 @@
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+<<<<<<< HEAD
 { "pid": 35942, "tid": 1, "ts": 1679864186877614, "dur": 803983, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1679864186879070, "dur": 140996, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1679864187522698, "dur": 10539, "ph": "X", "name": "OutputData.Write", "args": {} },
@@ -8,3 +9,17 @@
 { "pid": 35942, "tid": 1, "ts": 1679864187534116, "dur": 83351, "ph": "X", "name": "JsonToString", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1679864187691728, "dur": 1472, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1679864187686911, "dur": 6336, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+=======
+{ "pid": 35942, "tid": 1, "ts": 1679880838190502, "dur": 891019, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1679880838191913, "dur": 56193, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1679880838728019, "dur": 183083, "ph": "X", "name": "SetupSpecificConfigImpl GameAssembly", "args": {"info": "master_WebGL_wasm"} },
+{ "pid": 35942, "tid": 1, "ts": 1679880838736940, "dur": 143663, "ph": "X", "name": "SetupSpecificConfigImpl il2cpp", "args": {"info": "master_WebGL_wasm"} },
+{ "pid": 35942, "tid": 1, "ts": 1679880838739071, "dur": 99888, "ph": "X", "name": "SetupSpecificConfigImpl bdwgc", "args": {"info": "master_WebGL_wasm"} },
+{ "pid": 35942, "tid": 1, "ts": 1679880838839614, "dur": 3829, "ph": "X", "name": "SetupSpecificConfigImpl zlib", "args": {"info": "master_WebGL_wasm"} },
+{ "pid": 35942, "tid": 1, "ts": 1679880838936518, "dur": 18385, "ph": "X", "name": "SetupSpecificConfigImpl build", "args": {"info": "debug_WebGL_wasm"} },
+{ "pid": 35942, "tid": 1, "ts": 1679880839008230, "dur": 17463, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1679880839025697, "dur": 55819, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1679880839027609, "dur": 45466, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1679880839086876, "dur": 3544, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1679880839085994, "dur": 4489, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+>>>>>>> main

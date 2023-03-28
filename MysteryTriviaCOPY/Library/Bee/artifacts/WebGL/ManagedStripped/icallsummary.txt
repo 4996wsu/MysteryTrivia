@@ -153,7 +153,9 @@ UnityEngine.Audio.AudioPlayableOutput::InternalSetTarget
 UnityEngine.AudioClip::get_frequency
 UnityEngine.AudioClip::get_samples
 UnityEngine.AudioClip::get_length
+UnityEngine.AudioListener::get_volume
 UnityEngine.AudioListener::set_volume
+UnityEngine.AudioSource::PlayHelper
 UnityEngine.Avatar::get_humanDescription_Injected
 UnityEngine.AvatarMask::GetHumanoidBodyPartActive
 UnityEngine.AvatarMask::get_transformCount
@@ -697,9 +699,11 @@ UnityEngine.PlayerConnectionInternal::PollInternal
 UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
+UnityEngine.PlayerPrefs::TrySetFloat
 UnityEngine.PlayerPrefs::TrySetInt
 UnityEngine.PlayerPrefs::TrySetSetString
 UnityEngine.PlayerPrefs::GetInt
+UnityEngine.PlayerPrefs::GetFloat
 UnityEngine.PlayerPrefs::GetString
 UnityEngine.PolygonCollider2D::GetTotalPointCount
 UnityEngine.PolygonCollider2D::get_pathCount

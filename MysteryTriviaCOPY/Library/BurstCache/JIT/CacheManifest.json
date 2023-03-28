@@ -7,7 +7,15 @@
     },
     {
       "FullName": "Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+<<<<<<< HEAD
       "LastWriteTime": "2023-03-24T00:52:58.6127327Z"
+=======
+      "LastWriteTime": "2023-03-27T00:46:51.4800487Z"
+    },
+    {
+      "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2023-03-27T00:46:50.5695954Z"
+>>>>>>> main
     },
     {
       "FullName": "UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -19,7 +27,11 @@
     },
     {
       "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+<<<<<<< HEAD
       "LastWriteTime": "2023-03-24T00:52:58.6797482Z"
+=======
+      "LastWriteTime": "2023-03-27T00:46:50.9236195Z"
+>>>>>>> main
     },
     {
       "FullName": "netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
@@ -31,11 +43,19 @@
     },
     {
       "FullName": "Unity.2D.Common.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+<<<<<<< HEAD
       "LastWriteTime": "2023-03-24T00:52:58.6207353Z"
     },
     {
       "FullName": "Unity.2D.SpriteShape.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
       "LastWriteTime": "2023-03-24T00:52:58.6447403Z"
+=======
+      "LastWriteTime": "2023-03-27T00:46:50.0401377Z"
+    },
+    {
+      "FullName": "Unity.2D.SpriteShape.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2023-03-27T00:46:50.6255383Z"
+>>>>>>> main
     },
     {
       "FullName": "UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -43,6 +63,7 @@
     },
     {
       "FullName": "PsdPlugin, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+<<<<<<< HEAD
       "LastWriteTime": "2023-03-24T00:52:58.6057316Z"
     },
     {
@@ -60,13 +81,36 @@
     {
       "FullName": "mscorlib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
       "LastWriteTime": "2023-01-20T02:37:56Z"
+=======
+      "LastWriteTime": "2023-03-27T00:46:50.3158561Z"
+    },
+    {
+      "FullName": "mscorlib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2023-01-20T02:37:56Z"
+    },
+    {
+      "FullName": "Unity.2D.Common.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2023-03-27T00:46:51.0085324Z"
+    },
+    {
+      "FullName": "Unity.2D.Psdimporter.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2023-03-27T00:46:51.2562792Z"
+    },
+    {
+      "FullName": "Unity.2D.Animation.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2023-03-27T00:46:50.7833785Z"
+>>>>>>> main
     }
   ],
   "Functions": [
     {
       "FullName": "Unity.Jobs.IJobExtensions+JobStruct`1[[UnityEditor.U2D.Animation.BiharmonicsJob, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEditor.U2D.Animation.BiharmonicsJob&, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "26767571f77c308d118d2cff2e19f3f5",
+=======
+      "ModuleHash": "a99abe6249be73a2a126c61e24e69741",
+>>>>>>> main
       "LinkName": "9C987EFE5F9A4A52",
       "AssemblyDependencyIndices": [
         0,
@@ -82,93 +126,159 @@
     {
       "FullName": "Unity.Jobs.IJobExtensions+JobStruct`1[[UnityEngine.U2D.SpriteShapeGenerator, Unity.2D.SpriteShape.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.U2D.SpriteShapeGenerator&, Unity.2D.SpriteShape.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "dc8f93b9fd67d2b683bbb8efdfca4a27",
+=======
+      "ModuleHash": "931727d5b34578e342930ebcd824bdc2",
+>>>>>>> main
       "LinkName": "104599FDEEB36FAE",
       "AssemblyDependencyIndices": [
         0,
         8,
+<<<<<<< HEAD
         9,
         3,
         5,
         4,
+=======
+        6,
+        9,
+        4,
+        5,
+>>>>>>> main
         7
       ]
     },
     {
       "FullName": "Unity.Jobs.IJobExtensions+JobStruct`1[[PaintDotNet.Data.PhotoshopFileType.PDNAlphaMaskJob, PsdPlugin, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(PaintDotNet.Data.PhotoshopFileType.PDNAlphaMaskJob&, PsdPlugin, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "9e146622d91be83626b696f949704fab",
+=======
+      "ModuleHash": "d3825b4c6b0d080d730373ddc4918eab",
+>>>>>>> main
       "LinkName": "B33AFCD7D8FB6AEB",
       "AssemblyDependencyIndices": [
         0,
         10,
+<<<<<<< HEAD
         3
+=======
+        11,
+        4
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Jobs.IJobExtensions+JobStruct`1[[UnityEditor.U2D.Animation.TessellateJob, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEditor.U2D.Animation.TessellateJob&, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "7c1f50642204224dbd1aa630178f7cac",
+=======
+      "ModuleHash": "100b5338416d7f069e84f235204e84a2",
+>>>>>>> main
       "LinkName": "750999B742A414C6",
       "AssemblyDependencyIndices": [
         0,
         1,
+<<<<<<< HEAD
         3,
         7,
         4,
         5
+=======
+        7,
+        5,
+        4,
+        6
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Jobs.IJobExtensions+JobStruct`1[[UnityEditor.U2D.Animation.TriangulateJob, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEditor.U2D.Animation.TriangulateJob&, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "8aa98e5acc7bc813d63b88e59db0b350",
+=======
+      "ModuleHash": "cf75a9471e79d5755fc860856c865fb1",
+>>>>>>> main
       "LinkName": "49056CD1270901E4",
       "AssemblyDependencyIndices": [
         0,
         1,
+<<<<<<< HEAD
         7,
         3,
         4,
         5
+=======
+        4,
+        7,
+        5,
+        6
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoSetCSRTrampoline(System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "dcb1fe673798f316cfd0ddbc1ac63717",
       "LinkName": "801E9A000BB37B05",
       "AssemblyDependencyIndices": [
         6,
         5,
         3
+=======
+      "ModuleHash": "00ad65e42fcb561e23f3e5f5f5435fc1",
+      "LinkName": "801E9A000BB37B05",
+      "AssemblyDependencyIndices": [
+        2,
+        6,
+        4
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoGetCSRTrampoline()",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "e0ab2f6a762c842f6602154769957005",
       "LinkName": "CDCA4A5193BE5947",
       "AssemblyDependencyIndices": [
         6,
         5,
         3
+=======
+      "ModuleHash": "2bdbed03928c58afa7d1e08144d1a9e1",
+      "LinkName": "CDCA4A5193BE5947",
+      "AssemblyDependencyIndices": [
+        2,
+        6,
+        4
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEditor.U2D.Common.FindTightRectJob, Unity.2D.Common.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEditor.U2D.Common.FindTightRectJob&, Unity.2D.Common.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
-      "ModuleHash": "5d1fb49e97c899fe9e8bee19a4513161",
+      "ModuleHash": "ba9d9f47287f3d7a0d6a72a09a72bbed",
       "LinkName": "FBD0B2A6246F6223",
       "AssemblyDependencyIndices": [
         0,
+<<<<<<< HEAD
         11,
         3
+=======
+        12,
+        4
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEditor.U2D.PSD.ExtractLayerTask+ConvertBufferJob, Unity.2D.Psdimporter.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEditor.U2D.PSD.ExtractLayerTask+ConvertBufferJob&, Unity.2D.Psdimporter.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "d4466bb63cc98139e35335857ceaac36",
       "LinkName": "85C34B2AEC2FC609",
       "AssemblyDependencyIndices": [
@@ -176,11 +286,21 @@
         12,
         3,
         4
+=======
+      "ModuleHash": "b886abc1e7043e05c69e9d3d10191d93",
+      "LinkName": "85C34B2AEC2FC609",
+      "AssemblyDependencyIndices": [
+        0,
+        13,
+        4,
+        5
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEditor.U2D.PSD.FlattenImageTask+FlattenImageInternalJob, Unity.2D.Psdimporter.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEditor.U2D.PSD.FlattenImageTask+FlattenImageInternalJob&, Unity.2D.Psdimporter.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "37de404d7b62d717c4fd6132b52e78c8",
       "LinkName": "18C2EC3E41FEE880",
       "AssemblyDependencyIndices": [
@@ -188,22 +308,40 @@
         12,
         3,
         4
+=======
+      "ModuleHash": "105b4511f691c320a41ae4a706fc516b",
+      "LinkName": "18C2EC3E41FEE880",
+      "AssemblyDependencyIndices": [
+        0,
+        13,
+        4,
+        5
+>>>>>>> main
       ]
     },
     {
       "FullName": "Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[PaintDotNet.Data.PhotoshopFileType.PDNDecoderJob, PsdPlugin, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(PaintDotNet.Data.PhotoshopFileType.PDNDecoderJob&, PsdPlugin, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "86807d0f52b31a0242a2cc1e336ea908",
+=======
+      "ModuleHash": "4b3152bcc1e47cf047f349c4f9a7a563",
+>>>>>>> main
       "LinkName": "4B57F329150937D0",
       "AssemblyDependencyIndices": [
         0,
         10,
+<<<<<<< HEAD
         3
+=======
+        4
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Common.ImagePacker, Unity.2D.Common.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::BurstedBlit(UnityEngine.Color32*, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.int4&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.int4&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|UnityEngine.Color32*, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "76e7f12209b3c15fb7944778ac8d9ce9",
       "LinkName": "8115CAFF6B65630B",
       "AssemblyDependencyIndices": [
@@ -214,26 +352,51 @@
         0,
         5,
         2
+=======
+      "ModuleHash": "22a489932316d0a9085ce4ac6cd8bdbe",
+      "LinkName": "8115CAFF6B65630B",
+      "AssemblyDependencyIndices": [
+        12,
+        4,
+        0,
+        5,
+        2,
+        6,
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEngine.U2D.Animation.BurstedSpriteSkinUtilities, Unity.2D.Animation.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::ValidateBoneWeights(Unity.Collections.NativeSlice`1[[UnityEngine.BoneWeight, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "3333b265c0d5d902661f43a454db4219",
+=======
+      "ModuleHash": "26a4fa6296023fc43e6a344b080c9a34",
+>>>>>>> main
       "LinkName": "22C1BA9B75E8DDE1",
       "AssemblyDependencyIndices": [
         13,
         14,
+<<<<<<< HEAD
         5,
         3,
         0,
         6,
         2
+=======
+        6,
+        4,
+        0,
+        2,
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Animation.TriangulationUtility, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::ValidateCollinear(Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "e84f74a93120e7429e5f2b84c3158ffd",
       "LinkName": "7F9BDFAB3718C423",
       "AssemblyDependencyIndices": [
@@ -244,11 +407,24 @@
         5,
         0,
         2
+=======
+      "ModuleHash": "7f89e1f84df80e0c07b4cfad6b5ad7f4",
+      "LinkName": "7F9BDFAB3718C423",
+      "AssemblyDependencyIndices": [
+        1,
+        4,
+        5,
+        2,
+        6,
+        0,
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Animation.TriangulationUtility, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::TessellateBurst(Unity.Collections.Allocator, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.int2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.int2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.int3*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "3f2f807c3e2f67883d8c829cb404c4f3",
       "LinkName": "7D2E04AB7759F565",
       "AssemblyDependencyIndices": [
@@ -256,15 +432,29 @@
         3,
         0,
         4,
+=======
+      "ModuleHash": "7dd5a39376f856eb5f0ea4006c7f60a0",
+      "LinkName": "7D2E04AB7759F565",
+      "AssemblyDependencyIndices": [
+        1,
+        4,
+        0,
+>>>>>>> main
         5,
         6,
+        2,
         7,
+<<<<<<< HEAD
         2
+=======
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Animation.TriangulationUtility, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::SubdivideBurst(Unity.Collections.Allocator, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.int2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.int2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.int3*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "839f9ccf317e08ea2021441f759bf3a8",
       "LinkName": "4E9252389FAD9FEE",
       "AssemblyDependencyIndices": [
@@ -276,11 +466,25 @@
         5,
         7,
         2
+=======
+      "ModuleHash": "df14a3620f18672445cb690f961b96c5",
+      "LinkName": "4E9252389FAD9FEE",
+      "AssemblyDependencyIndices": [
+        1,
+        4,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Animation.BoundedBiharmonicWeightsGenerator, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::SampleBones_(Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.int2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "2d4a31dc51b5621faf69715143a9f43e",
       "LinkName": "4C542F1631655C96",
       "AssemblyDependencyIndices": [
@@ -291,27 +495,52 @@
         6,
         0,
         2
+=======
+      "ModuleHash": "8fd239ad2fdf794f62778fe615299caf",
+      "LinkName": "4C542F1631655C96",
+      "AssemblyDependencyIndices": [
+        1,
+        4,
+        5,
+        6,
+        2,
+        0,
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Animation.BoundedBiharmonicWeightsGenerator, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::TriangulateSamplers_(Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32&, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32&, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "cd89f63db9697eb75672d469382fc72f",
       "LinkName": "0DF0BB6E3E9C95ED",
       "AssemblyDependencyIndices": [
         1,
         3,
+=======
+      "ModuleHash": "21190fe9a2f433bc1661822b946cc045",
+      "LinkName": "0DF0BB6E3E9C95ED",
+      "AssemblyDependencyIndices": [
+        1,
+>>>>>>> main
         4,
         5,
         6,
+        2,
         7,
         0,
+<<<<<<< HEAD
         2
+=======
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Animation.BoundedBiharmonicWeightsGenerator, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::TriangulateInternal_(System.Void*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Void*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Void*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32&, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "63729dd12b3c51634df48773518a5001",
       "LinkName": "9C009FC40CDEA715",
       "AssemblyDependencyIndices": [
@@ -323,11 +552,25 @@
         7,
         0,
         2
+=======
+      "ModuleHash": "a91b583ab5da06694758dc09b674cd9e",
+      "LinkName": "9C009FC40CDEA715",
+      "AssemblyDependencyIndices": [
+        1,
+        4,
+        2,
+        6,
+        5,
+        7,
+        0,
+        3
+>>>>>>> main
       ]
     },
     {
       "FullName": "UnityEditor.U2D.Animation.BoundedBiharmonicWeightsGenerator, Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::CalculateInternal_(Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.float2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.int2*, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|UnityEngine.BoneWeight*, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)",
       "ModuleOptionsHash": 15221144590354301703,
+<<<<<<< HEAD
       "ModuleHash": "385486851371faf39059472a731708b1",
       "LinkName": "1275254E9CEB788C",
       "AssemblyDependencyIndices": [
@@ -339,6 +582,19 @@
         6,
         7,
         2
+=======
+      "ModuleHash": "6b886cb90fd92c33c6caf34cbd05e85d",
+      "LinkName": "1275254E9CEB788C",
+      "AssemblyDependencyIndices": [
+        1,
+        4,
+        5,
+        0,
+        6,
+        2,
+        7,
+        3
+>>>>>>> main
       ]
     }
   ]

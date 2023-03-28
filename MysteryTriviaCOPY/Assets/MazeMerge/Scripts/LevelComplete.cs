@@ -21,7 +21,7 @@ public class LevelComplete : MonoBehaviour
 
         if(currentindex==totalscenes-1)
         {
-            currentindex = 5;
+            currentindex = 6;//change to based on name
         }
         else
             currentindex++;

@@ -36,12 +36,29 @@ public class Player : MonoBehaviour
     public TMP_Text check;
     popupquestions popq;
     User user;
+<<<<<<< HEAD
+=======
+    private bool guest = true;
+>>>>>>> main
 
     public AudioSource explosion;
     public AudioSource goodPickup;
     public AudioSource whoosh;
     void Start()
     {
+        int guestlog = PlayerPrefs.GetInt("Guest");
+        if (guestlog == 0)
+        {
+            Debug.Log("Playing as Guest");
+            guest = true;
+            PlayerPrefs.SetInt("Guest", 0); //0 set to as logged on as guest
+            var request = new LoginWithCustomIDRequest() { TitleId = "47EFF", CustomId = "714738762171981" };
+            PlayFabClientAPI.LoginWithCustomID(request, OnGuestLoginSuccess, OnError);
+        }
+        else
+        {
+            guest = false;
+        }
         //reference = FirebaseDatabase.DefaultInstance.RootReference;
         rb = GetComponent<Rigidbody2D>();
         polycolider = GetComponent<PolygonCollider2D>();
@@ -57,7 +74,12 @@ public class Player : MonoBehaviour
         
  
     }
+    void OnGuestLoginSuccess(LoginResult result)
+    {
+        Debug.Log("Guest Login Success");
+        
  
+    }
     // Update is called once per frame
     void Update()
     {
@@ -97,7 +119,7 @@ public class Player : MonoBehaviour
         {
             if (facingRight == true) //currently facing right and moving left
             {
-                Debug.Log("FLIP");
+                //Debug.Log("FLIP");
                 //spriteRenderer.flipX = false;
                 Vector3 theFlip = transform.localScale;
                 float x = theFlip.x;
@@ -174,6 +196,13 @@ public class Player : MonoBehaviour
     }
     public void Read_Data()
     {
+        if(guest == true)
+        {
+            int guestpoints = PlayerPrefs.GetInt("guestpoints");
+            Debug.Log("Guest points: " + guestpoints);
+            points = guestpoints;
+            return;
+        }
         if (PlayFabClientAPI.IsClientLoggedIn() == false)
         {
             Debug.Log("NOT LOGGED ON");
@@ -186,6 +215,10 @@ public class Player : MonoBehaviour
     }
     void OnDataRecieved(GetUserDataResult result)
     {
+        if(guest == true)
+        {
+            
+        }
         if (result.Data != null && result.Data.ContainsKey("Email") && result.Data.ContainsKey("HintPoints")
             && result.Data.ContainsKey("Level") && result.Data.ContainsKey("MazeNumber") && result.Data.ContainsKey("Username") && result.Data.ContainsKey("Category"))
         {
@@ -202,7 +235,7 @@ public class Player : MonoBehaviour
         }
         if (user.MazeNumber == 0)
         {
-            user.MazeNumber = 5; //set to start of maze 1 if this is the first game
+            user.MazeNumber = 6; //set to start of maze 1 if this is the first game
         }
         PlayerPrefs.SetString("Category", user.Category);
         points = user.HintPoints;
@@ -220,6 +253,13 @@ public class Player : MonoBehaviour
    
     public void SaveData()
     {
+        if (guest == true)
+        {
+            Debug.Log("GUEST: ");
+            PlayerPrefs.SetInt("guestpoints", points); //save guest points for next level
+            Debug.Log("Guest points: at save" + points);
+            return;
+        }
         Debug.Log("USER: ");
         user.HintPoints = points;
         user.MazeNumber = SceneManager.GetActiveScene().buildIndex + 1;
@@ -256,8 +296,13 @@ public class Player : MonoBehaviour
             transform.eulerAngles = new Vector3(-x, y, z);
             transform.localScale = new Vector3(-x * 4, y * 4, z * 4);
             playeranimator.SetTrigger("death");
+<<<<<<< HEAD
             explosion.Play ();
        
+=======
+            explosion.Play();
+
+>>>>>>> main
         }
         if (collision.gameObject.tag == "Chest")
         {
@@ -266,6 +311,7 @@ public class Player : MonoBehaviour
             hintPoints.text = "Hint Points: " + points;
             goodPickup.Play();
             Destroy(collision.gameObject);
+
         }
 
         if (collision.gameObject.tag == "Boost")
@@ -306,28 +352,28 @@ public class Player : MonoBehaviour
                 popq.getQuestion();
             }
         }
-        if (collision.gameObject.tag == "Walls" || collision.gameObject.tag == "Lock")
+        if (collision.gameObject.tag == "Lock")
         {
         
             if (Input.GetKey(KeyCode.LeftArrow))
             {
           
-                transform.Translate(3 * Time.deltaTime, 0, 0);
+                transform.Translate(4 * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
       
-                transform.Translate(-3 * Time.deltaTime, 0, 0);
+                transform.Translate(-4 * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.UpArrow))
             {
         
-                transform.Translate(0, -3 * Time.deltaTime, 0);
+               transform.Translate(0, -4 * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
      
-                transform.Translate(0, 3 * Time.deltaTime, 0);
+               transform.Translate(0, 4 * Time.deltaTime, 0);
             }
         }
         

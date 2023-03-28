@@ -722,11 +722,23 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.AudioListener
 
+		//System.Single UnityEngine.AudioListener::get_volume()
+		void Register_UnityEngine_AudioListener_get_volume();
+		Register_UnityEngine_AudioListener_get_volume();
+
 		//System.Void UnityEngine.AudioListener::set_volume(System.Single)
 		void Register_UnityEngine_AudioListener_set_volume();
 		Register_UnityEngine_AudioListener_set_volume();
 
 	//End Registrations for type : UnityEngine.AudioListener
+
+	//Start Registrations for type : UnityEngine.AudioSource
+
+		//System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
+		void Register_UnityEngine_AudioSource_PlayHelper();
+		Register_UnityEngine_AudioSource_PlayHelper();
+
+	//End Registrations for type : UnityEngine.AudioSource
 
 	//Start Registrations for type : UnityEngine.Avatar
 
@@ -3178,6 +3190,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.PlayerPrefs
 
+		//System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
+		void Register_UnityEngine_PlayerPrefs_TrySetFloat();
+		Register_UnityEngine_PlayerPrefs_TrySetFloat();
+
 		//System.Boolean UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)
 		void Register_UnityEngine_PlayerPrefs_TrySetInt();
 		Register_UnityEngine_PlayerPrefs_TrySetInt();
@@ -3189,6 +3205,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
 		void Register_UnityEngine_PlayerPrefs_GetInt();
 		Register_UnityEngine_PlayerPrefs_GetInt();
+
+		//System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
+		void Register_UnityEngine_PlayerPrefs_GetFloat();
+		Register_UnityEngine_PlayerPrefs_GetFloat();
 
 		//System.String UnityEngine.PlayerPrefs::GetString(System.String,System.String)
 		void Register_UnityEngine_PlayerPrefs_GetString();
