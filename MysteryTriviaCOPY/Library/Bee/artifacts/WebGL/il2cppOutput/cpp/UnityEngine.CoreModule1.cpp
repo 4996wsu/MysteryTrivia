@@ -1193,6 +1193,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* GameObject__ctor_m721D643351E55308EA4F5F41B
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_get_activeInHierarchy_m49250F4F168DCC5388D5BE4F6A5681386907B109_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_get_layer_m108902B9C89E9F837CE06B9942AA42307450FEAF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_get_tag_mEDD27BF795072834D656B286CBE51B2C99747805_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56_RuntimeMethod_var;
@@ -19866,6 +19867,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 	_il2cpp_icall_func = (GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::Find(System.String)");
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* icallRetVal = _il2cpp_icall_func(___0_name);
 	return icallRetVal;
+}
+// UnityEngine.GameObject UnityEngine.GameObject::get_gameObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StackTraceSentry _stackTraceSentry(GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC_RuntimeMethod_var);
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	{
+		V_0 = __this;
+		goto IL_0005;
+	}
+
+IL_0005:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = V_0;
+		return L_0;
+	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

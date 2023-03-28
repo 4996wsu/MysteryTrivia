@@ -223,6 +223,7 @@ public class popupquestions : MonoBehaviour
             range = total;
             start = total * 3 / 4;
         }
+        Debug.Log("Range: " + range);
         return range;
     }
     public void getQuestion()
@@ -239,6 +240,7 @@ public class popupquestions : MonoBehaviour
         limit = getQuestionRange();
         int randomNumber = Random.Range(start, limit+1); //rn 0-9
         int index = randomNumber;
+        Debug.Log("question: " + randomNumber);
         //index = 3?
         //start questions at 3 index and shows index*4 + 1,2,3 for answers
         popUpText.text = ArrayQuestions[index];
@@ -267,9 +269,11 @@ public class popupquestions : MonoBehaviour
         }
         else
         {
-            Debug.Log("WRONG!!!!!!");
+           
             QuestionBox.GetComponent<Image>().color = Color.red;
-      
+            int availablepoints = PlayerPrefs.GetInt("availablePoints");
+            PlayerPrefs.SetInt("availablePoints", availablepoints - 10);
+            Debug.Log("WRONG!!!!!! available points: " + (availablepoints-10));
         }
     }
     public void btnClick()

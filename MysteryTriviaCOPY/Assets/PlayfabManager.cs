@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 
 public class PlayfabManager : MonoBehaviour
 {
-
+    public string TitleId = "47EFF";
     [SerializeField]
     private string sceneNameToLoad;
     private float timeElapsed;
@@ -36,7 +36,8 @@ public class PlayfabManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        TitleId = "47EFF";
+        PlayFabSettings.TitleId = TitleId;
     }
     void Update()
     {
@@ -144,6 +145,7 @@ public class PlayfabManager : MonoBehaviour
         {
             Email = emailRegisterInput.text,
             Password = passwordRegisterInput.text,
+            DisplayName = usernameRegisterInput.text,
             RequireBothUsernameAndEmail = false
         };
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterError);
@@ -151,6 +153,13 @@ public class PlayfabManager : MonoBehaviour
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         CreateUserInPlayFab();
+
+        LeaderboardManager.playerEmail = emailRegisterInput.text;
+
+        LeaderboardManager.password = passwordRegisterInput.text;
+
+        LeaderboardManager.Instance.SubmitScore(0);
+
         SceneManager.LoadScene("Login");
 
     }
@@ -178,8 +187,23 @@ public class PlayfabManager : MonoBehaviour
         PlayerPrefs.SetInt("Guest", 1); //0 set to as logged on as guest
         Debug.Log("Login Success");
         messageText.text = "You have successfully logged in!";
-        SceneManager.LoadScene("PlayMenu");
 
+        LeaderboardManager.playerEmail = emailLoginInput.text;
+
+        LeaderboardManager.password = passwordLoginInput.text;
+
+        LeaderboardManager.IsLoggedIn = true;
+
+        LeaderboardManager.Instance.GetLeaderboard();
+
+        messageText.text = "Loading Data! Please Wait";
+        messageText.color = Color.green;
+        Invoke("DelayLoadScene", 2f);
+    }
+    public void DelayLoadScene()
+    {
+        messageText.text = "You have successfully logged in!";
+        SceneManager.LoadScene("PlayMenu");
     }
     void OnGuestLoginSuccess(LoginResult result)
     {

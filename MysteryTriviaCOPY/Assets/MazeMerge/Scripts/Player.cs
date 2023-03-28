@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
     public AudioSource whoosh;
     void Start()
     {
+        PlayerPrefs.SetInt("availablePoints", 50);
         int guestlog = PlayerPrefs.GetInt("Guest");
         if (guestlog == 0)
         {
@@ -240,10 +241,47 @@ public class Player : MonoBehaviour
         {
             user.MazeNumber = 6; //set to start of maze 1 if this is the first game
         }
+        calculateDifficulty();
         PlayerPrefs.SetString("Category", user.Category);
         points = user.HintPoints;
         mazenumber = user.MazeNumber;
         user.PrintUser();
+    }
+    void calculateDifficulty()
+    {
+        
+
+        int difficulty = PlayerPrefs.GetInt("Difficulty");
+        if (difficulty == -1)
+        {
+            Debug.Log("difficulty: " + difficulty);
+            return; //will always stay -1 for teachers code
+        }
+        difficulty = user.Level;
+        Debug.Log("user difficulty: " + difficulty);
+        if (difficulty == -1)
+        {
+            return; //will always stay -1 for teachers code
+        }
+        
+        else if (difficulty ==1 && user.MazeNumber == 8)
+        {
+            difficulty = 2;
+            user.Level = 2;
+            PlayerPrefs.SetInt("Difficulty", difficulty);
+        }
+        else if (difficulty == 2 && user.MazeNumber == 22)
+        {
+            difficulty = 3;
+            user.Level = 3;
+            PlayerPrefs.SetInt("Difficulty", difficulty);
+        }
+        else if (difficulty == 3 && user.MazeNumber == 30)
+        {
+            difficulty = 4;
+            user.Level = 4;
+            PlayerPrefs.SetInt("Difficulty", difficulty);
+        }
     }
     void OnDataSend(UpdateUserDataResult result)
     {
@@ -266,6 +304,7 @@ public class Player : MonoBehaviour
         Debug.Log("USER: ");
         user.HintPoints = points;
         user.MazeNumber = SceneManager.GetActiveScene().buildIndex + 1;
+        user.Level = PlayerPrefs.GetInt("Difficulty");
         user.PrintUser();
         var request = new UpdateUserDataRequest
         {
@@ -340,7 +379,13 @@ public class Player : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 popq.unlock = false;
-                points = points + 50;
+                int availablepoints = PlayerPrefs.GetInt("availablePoints");
+                if(availablepoints <= 0)
+                {
+                    availablepoints = 0;
+                }
+                points = points + availablepoints;
+                PlayerPrefs.SetInt("availablePoints", 50);
             }
             else
             {
@@ -356,22 +401,22 @@ public class Player : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow))
             {
           
-                transform.Translate(4 * Time.deltaTime, 0, 0);
+                transform.Translate(6 * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
       
-                transform.Translate(-4 * Time.deltaTime, 0, 0);
+                transform.Translate(-6 * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.UpArrow))
             {
         
-               transform.Translate(0, -4 * Time.deltaTime, 0);
+               transform.Translate(0, -6 * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
      
-               transform.Translate(0, 4 * Time.deltaTime, 0);
+               transform.Translate(0, 6* Time.deltaTime, 0);
             }
         }
         

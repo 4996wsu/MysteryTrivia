@@ -12,7 +12,7 @@ public class LevelComplete : MonoBehaviour
         float score = FindObjectOfType<Player>().points;
         ResultText.text = "Total Points: " + score;
         LevelCompletePanel.SetActive(true);
-
+        LeaderboardManager.Instance.SubmitScore((int)score);
     }
     public void NextLevel()
     {
@@ -21,7 +21,7 @@ public class LevelComplete : MonoBehaviour
 
         if(currentindex==totalscenes-1)
         {
-            currentindex = 6;//change to based on name
+            currentindex = 5;
         }
         else
             currentindex++;

@@ -78,6 +78,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\MazeMerge\Scripts\LeaderBoard\LeaderBoardChecker.cs" />
+    <Compile Include="Assets\MazeMerge\Scripts\LeaderBoard\LeaderBoardController.cs" />
+    <Compile Include="Assets\MazeMerge\Scripts\LeaderBoard\LeaderBoardModel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\UIManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\MazeMerge\Scripts\LeaderBoard\LeaderboardManager.cs" />
     <Compile Include="Assets\MazeMerge\Scripts\popupquestions.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\FirebaseAuthManager.cs" />
@@ -106,8 +110,8 @@
     <Compile Include="Assets\User.cs" />
     <Compile Include="Assets\MazeMerge\Answers.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scenes\testPlayFab\PlayFabTestAJ.cs" />
     <Compile Include="Assets\MazeMerge\Scripts\audioController.cs" />
+    <Compile Include="Assets\Scenes\testPlayFab\PlayFabTestAJ.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -138,7 +138,22 @@ public class PlayFabTestAJ : MonoBehaviour
         difficulty = difficult;
         PlayerPrefs.SetInt("Difficulty", difficulty);
         Debug.Log("Difficulty: " + difficulty);
-
+        if(difficulty ==1)
+        {
+            sceneID = 6;
+        }
+        else if (difficulty == 2)
+        {
+            sceneID = 15;
+        }
+        else if (difficulty == 3)
+        {
+            sceneID = 22;
+        }
+        else if (difficulty == 4)
+        {
+            sceneID = 30;
+        }
     }
     public void GetDifficulty()
     {
@@ -176,7 +191,7 @@ public class PlayFabTestAJ : MonoBehaviour
         PlayerPrefs.SetInt("newgame", 1);
         usertest.Category = category;
         usertest.HintPoints = 0;
-        usertest.MazeNumber = 6;
+        usertest.MazeNumber = sceneID;
         usertest.Level = difficulty;
         usertest.PrintUser();
 
