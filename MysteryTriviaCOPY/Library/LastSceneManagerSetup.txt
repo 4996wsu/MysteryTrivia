@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Categories.unity
+- path: Assets/Scenes/mazeMarrone7.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

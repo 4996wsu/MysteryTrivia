@@ -12,6 +12,7 @@ TagManager:
   - Lock
   - Boost
   - LoadGame
+  - Timer
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     //    DatabaseReference reference;
     public Animator playeranimator;
     [SerializeField]
-    private float speed = 3.0f;
+    public float speed = 3.0f;
     [SerializeField]
     private float rotationSpeed;
 
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     public int flagBoost = 0;
 
     private bool facingRight = true;
-    private bool froze = false;
+    public bool froze = false;
     public TMP_Text hintPoints;
     public TMP_Text win;
     public string popUp = "popUp";
@@ -398,22 +398,22 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Lock")
         {
         
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.A))
             {
           
                 transform.Translate(6 * Time.deltaTime, 0, 0);
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.D))
             {
       
                 transform.Translate(-6 * Time.deltaTime, 0, 0);
             }
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow)||Input.GetKey(KeyCode.W))
             {
         
                transform.Translate(0, -6 * Time.deltaTime, 0);
             }
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow)||Input.GetKey(KeyCode.S))
             {
      
                transform.Translate(0, 6* Time.deltaTime, 0);
