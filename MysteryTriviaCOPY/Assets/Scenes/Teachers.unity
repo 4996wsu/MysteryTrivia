@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae289babbbbdf884183ad62bcb75548e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TitleId: 47EFF
   sceneNameToLoad: 
   messageText: {fileID: 572587809}
   emailLoginInput: {fileID: 1457430224}
@@ -788,7 +789,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
