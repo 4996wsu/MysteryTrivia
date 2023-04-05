@@ -40,7 +40,8 @@ public class popupquestions : MonoBehaviour
       string[] ArrayQuestions = new string[600];
     string[] ArrayAnswers = new string[2400];
     string[] CorrectAnswers = new string[600];
-   
+   public AudioSource rightAnswer;
+    public AudioSource wrongAnswer;
 
     void Start()
     {
@@ -265,6 +266,7 @@ public class popupquestions : MonoBehaviour
             Debug.Log("CORRECT");
             unlock = true;
             QuestionBox.GetComponent<Image>().color = Color.green;
+            rightAnswer.Play();
           
         }
         else
@@ -273,6 +275,7 @@ public class popupquestions : MonoBehaviour
             QuestionBox.GetComponent<Image>().color = Color.red;
             int availablepoints = PlayerPrefs.GetInt("availablePoints");
             PlayerPrefs.SetInt("availablePoints", availablepoints - 10);
+            wrongAnswer.Play();
             Debug.Log("WRONG!!!!!! available points: " + (availablepoints-10));
         }
     }
