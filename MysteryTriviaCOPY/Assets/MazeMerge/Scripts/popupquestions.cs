@@ -200,7 +200,7 @@ public class popupquestions : MonoBehaviour
     {
         int range = 0;
         int difficulty = PlayerPrefs.GetInt("Difficulty");
-        if(difficulty == -1)
+        if(difficulty == -1)//teachers code
         {
             range = total;
         }

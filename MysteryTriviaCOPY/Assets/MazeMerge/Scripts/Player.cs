@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
     public TMP_Text check;
     popupquestions popq;
     User user;
+
+    GameObject newLock;
+
     private bool guest = true;
 
     public AudioSource explosion;
@@ -368,8 +371,36 @@ public class Player : MonoBehaviour
                 win.text = "YOU WIN!!!!";
             SaveData();
         }
+        if (collision.gameObject.tag == "Lock" && popq.unlock == false)
+        {
+
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+
+                transform.Translate(18 * Time.deltaTime, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+
+                transform.Translate(-18 * Time.deltaTime, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+
+                transform.Translate(0, -18 * Time.deltaTime, 0);
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+
+                transform.Translate(0, 18 * Time.deltaTime, 0);
+            }
+        }
+
         if (collision.gameObject.tag == "Lock")
         {
+            newLock = collision.gameObject;
+
+
             popq = GameObject.Find("PopupQuestion").GetComponent<popupquestions>();
             if(popq == null)
             {
@@ -377,7 +408,9 @@ public class Player : MonoBehaviour
             }
             if (popq.unlock == true)
             {
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
+                newLock = collision.gameObject;
+                newLock.GetComponent<Animator>().SetTrigger("Unlock");
                 popq.unlock = false;
                 int availablepoints = PlayerPrefs.GetInt("availablePoints");
                 if(availablepoints <= 0)
@@ -395,30 +428,7 @@ public class Player : MonoBehaviour
                 popq.getQuestion();
             }
         }
-        if (collision.gameObject.tag == "Lock")
-        {
-        
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-          
-                transform.Translate(6 * Time.deltaTime, 0, 0);
-            }
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-      
-                transform.Translate(-6 * Time.deltaTime, 0, 0);
-            }
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-        
-               transform.Translate(0, -6 * Time.deltaTime, 0);
-            }
-            if (Input.GetKey(KeyCode.DownArrow))
-            {
-     
-               transform.Translate(0, 6* Time.deltaTime, 0);
-            }
-        }
+       
         
     }
 }
