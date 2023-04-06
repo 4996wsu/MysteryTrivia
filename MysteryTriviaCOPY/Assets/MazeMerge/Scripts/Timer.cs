@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
      public GameObject Player;
      
      public GameObject Questions;
+     public GameObject Clockface;
      public CanvasGroup UI_timer;
     
      public TMP_Text Timecounter;
@@ -26,13 +27,18 @@ public class Timer : MonoBehaviour
     {
         Timecounter.SetText(timeStorage.ToString());
         Questions = GameObject.Find("PopupQuestion");
+        
     }
 
     // Update is called once per frame
     void Update()
     {//timer gets called if the player is frozen for a question
         if(Player.GetComponent<Player>().speed==0){
-            timerIsRunning = true;           
+            timerIsRunning = true;        
+             UI_timer.alpha = 1f;
+             Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().alpha=1f;
+             Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().interactable=true;
+             Clockface.GetComponent<Image>().color=new Color(0f,75f,255f,1f); 
         }
         else
         {
@@ -42,9 +48,9 @@ public class Timer : MonoBehaviour
         }
         
        if (timerIsRunning)
-        {   //shows timer at 10 seconds to avoid pressuring players
-            if(timeRemaining<10){               
-                UI_timer.alpha = 1f;                          
+        {   //changes timer face at 5 seconds to pressure players
+            if(timeRemaining<6){               
+               Clockface.GetComponent<Image>().color=new Color(1f,0f,0f,1f);                    
             }
             //this increments the timer downwards 
             if (timeRemaining > 0)
@@ -57,14 +63,28 @@ public class Timer : MonoBehaviour
                 Timecounter.SetText(outProcessing);
             }
             
-            else
+            else if (timeRemaining>-3)
             {
+                //hardcode to remove negatives
+                Timecounter.SetText("0");
+                //keeps the tiemr running
+                timeRemaining -= Time.deltaTime;
                 UI_timer.alpha = 0f;
-                timeRemaining = timeStorage;
+                //changes question text to explanation
+                Questions.GetComponent<popupquestions>().popUpText.text="Time's up!";
+              }
+              else
+              {
+                //
                 timerIsRunning = false;
+                timeRemaining = timeStorage;
+                //gets rid of timer visibility and interactability 
+                 Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().alpha=0f;
+                 Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().interactable=false;
                 Player.GetComponent<Player>().toggleSpeed();
-                Questions = GameObject.Find("PopupQuestion");
-                Destroy(Questions);
+                int availablepoints = PlayerPrefs.GetInt("availablePoints");
+                PlayerPrefs.SetInt("availablePoints", availablepoints - 10);
+                Debug.Log("Timeout available points: " + (availablepoints-10));
               }
             }
             }
