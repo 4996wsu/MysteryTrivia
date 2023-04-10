@@ -347,7 +347,7 @@ public class Player : MonoBehaviour
             points += 150;
             hintPoints.text = "Hint Points: " + points;
             goodPickup.Play();
-            Destroy(collision.gameObject);
+           
 
         }
 
