@@ -373,6 +373,7 @@
 "Assets/MazeMerge/Scripts/popupquestions.cs"
 "Assets/MazeMerge/Scripts/Timer.cs"
 "Assets/MazeMerge/Sprites/Chests/open.cs"
+"Assets/MazeMerge/Sprites/Chests/popup.cs"
 "Assets/MovingBackground.cs"
 "Assets/PlayfabManager.cs"
 "Assets/Scenes/MovingBackground.cs"

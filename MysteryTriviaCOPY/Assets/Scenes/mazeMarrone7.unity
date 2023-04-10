@@ -2278,6 +2278,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 654404147680344641, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 773454508298005095, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2322,11 +2326,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3309162867125427591, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976315294772828926, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4648517975373386852, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
       propertyPath: m_Name
       value: MysteryChest
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5962119613815873648, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962119613815873648, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3921946973747587723, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 60237a590b6aef4449f4d727d4098ce3, type: 3}
 --- !u!1 &519420028
 GameObject:
