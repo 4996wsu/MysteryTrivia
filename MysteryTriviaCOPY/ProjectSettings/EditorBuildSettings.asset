@@ -125,4 +125,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AustinMaze2.unity
     guid: 4c1656289d79efb46875394981b81690
+  - enabled: 1
+    path: Assets/Scenes/AustinMaze14.unity
+    guid: 09863d057c7d9a845ba8fd8dab0902b1
   m_configObjects: {}
