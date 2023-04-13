@@ -8,11 +8,8 @@ public class open : MonoBehaviour
     public GameObject thisChest;
     public Animation chestOpen;
     [SerializeField]
-    
-   
      void OnCollisionEnter2D(Collision2D collision)
     {
-        
         if(collision.gameObject.tag=="Player"){
         Debug.Log("opening chest");
         chestOpen.Play();
@@ -21,11 +18,5 @@ public class open : MonoBehaviour
     public void DelayedDestroy(){
         Destroy(thisChest);
     }
-    
-    
-        
-        
-        
-    
 
 }

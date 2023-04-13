@@ -2143,6 +2143,8 @@ MonoBehaviour:
   correctAnswer: 
   unlock: 0
   answer: 
+  rightAnswer: {fileID: 0}
+  wrongAnswer: {fileID: 0}
 --- !u!114 &1202625753
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,11 +7,8 @@ public class popup : MonoBehaviour
     public GameObject thisPot;
     public Animation points;
     [SerializeField]
-    
-   
      void OnCollisionEnter2D(Collision2D collision)
     {
-        
         if(collision.gameObject.tag=="Player"){
         Debug.Log("opening chest");
         points.Play();

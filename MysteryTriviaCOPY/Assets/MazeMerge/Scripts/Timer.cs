@@ -43,6 +43,8 @@ public class Timer : MonoBehaviour
         else
         {
             UI_timer.alpha = 0f;
+            Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().alpha=0f;
+            Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().interactable=false;
             timeRemaining = timeStorage;
             timerIsRunning = false;
         }
@@ -67,7 +69,7 @@ public class Timer : MonoBehaviour
             {
                 //hardcode to remove negatives
                 Timecounter.SetText("0");
-                //keeps the tiemr running
+                //keeps the timer running
                 timeRemaining -= Time.deltaTime;
                 UI_timer.alpha = 0f;
                 //changes question text to explanation
@@ -75,10 +77,10 @@ public class Timer : MonoBehaviour
               }
               else
               {
-                //
+                //gets rid of timer visibility and interactability 
                 timerIsRunning = false;
                 timeRemaining = timeStorage;
-                //gets rid of timer visibility and interactability 
+                //Get rid of question visibility and interactability 
                  Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().alpha=0f;
                  Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().interactable=false;
                 Player.GetComponent<Player>().toggleSpeed();
