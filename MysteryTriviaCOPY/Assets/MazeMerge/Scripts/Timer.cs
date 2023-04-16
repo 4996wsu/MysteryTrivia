@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
              UI_timer.alpha = 1f;
              Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().alpha=1f;
              Questions.GetComponent<popupquestions>().GetComponent<CanvasGroup>().interactable=true;
-             Clockface.GetComponent<Image>().color=new Color(0f,75f,255f,1f); 
+             Clockface.GetComponent<Image>().color=new Color(0f,217f,255f,1f); 
         }
         else
         {
