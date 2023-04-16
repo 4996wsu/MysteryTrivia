@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 97
+  controlID: 17
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 455
     height: 626
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 98
+  controlID: 18
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 99
+  controlID: 19
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -601,22 +601,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MazeMerge/Animation
+    - Assets/MazeMerge/Sprites/cave_tileset
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MazeMerge/Animation
+  - Assets/MazeMerge/Sprites/cave_tileset
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 120}
-    m_SelectedIDs: 18700000
-    m_LastClickedID: 28696
-    m_ExpandedIDs: 00000000926f0000946f0000966f0000986f00009a6f00009c6f00009e6f0000a06f0000a46f000000ca9a3b
+    scrollPos: {x: 0, y: 300}
+    m_SelectedIDs: 486e0000
+    m_LastClickedID: 28232
+    m_ExpandedIDs: 000000000c6e00000e6e0000106e0000126e0000146e0000166e0000186e00001a6e00001c6e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -644,7 +644,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000926f0000946f0000966f0000986f00009a6f00009c6f00009e6f0000a06f0000a26f0000a46f0000
+    m_ExpandedIDs: 000000000c6e00000e6e0000106e0000126e0000146e0000166e0000186e00001a6e00001c6e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 347.5}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -735,7 +735,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 158
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -771,10 +771,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 26680000
-      m_LastClickedID: 26662
-      m_ExpandedIDs: 4288ffffdab4ffffdcb4ffffdeb4ffffa2b8ffffa4b8ffffa8b8ffffaab8ffffcabbffffccbbffffe8cfffff28dbffff2cdbffff3cf1ffff0efbffff90650000b8650000d0650000dc650000e8650000006600000c66000018660000ba660000d2660000e86600000a670000226700003c670000526700006e670000926700009e6700000a680000346800005868000078680000846800009c680000bc680000226900002e690000466900006869000074690000a2690000c8690000ae6a0000de6a0000ea6a00000e6b0000266b0000526b0000a26b0000ae6b0000da6b00000a6c0000366c00005e6c0000
+      scrollPos: {x: 0, y: 48}
+      m_SelectedIDs: 5cf90000
+      m_LastClickedID: 63836
+      m_ExpandedIDs: 425effff465effff485effff4a5effff565effff585effff5075ffff3c76ffff6681ffff6881ffff6685ffff2490ffff2690ffff8895ffff8c95ffff9095ffff9495ffff2097ffff2a9cffff2c9cffff28b4ffff2cb4ffff30b4ffff34b4ffff36b4ffff3cb4ffff3eb4ffff54b9ffff56b9ffff58b9ffff60b9ffff6ab9fffff6baffff18bfffffaec2fffff6c2ffff40c6ffff50caffff3eccfffff2faffff0cfbffff0efbffff60f700007cf70000b2f70000e8f7000000f8000010f8000028f8000032f8000046f8000072f800007ef80000bcf80000daf80000e6f8000008f9000014f9000020f9000032f90000b0f90000d8f90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1078,9 +1078,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.3258946, y: 2.5798366, z: -0.041180328}
+    m_Target: {x: -0.21412782, y: 1.2857642, z: 0.111775346}
     speed: 2
-    m_Value: {x: 1.3258946, y: 2.5798366, z: -0.041180328}
+    m_Value: {x: -0.19310145, y: 1.3233113, z: 0.11467396}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1117,13 +1117,13 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 1
+    m_ShowGrid: 0
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -1131,9 +1131,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.026855
+    m_Target: 6.731279
     speed: 2
-    m_Value: 8.026855
+    m_Value: 6.4414153
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1219,7 +1219,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

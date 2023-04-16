@@ -15,7 +15,7 @@ C:/Users/jrmar/Documents/GitHub/testtrivia/MysteryTriviaCOPY
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50818
+52819
 Successfully changed project path to: C:/Users/jrmar/Documents/GitHub/testtrivia/MysteryTriviaCOPY
 C:/Users/jrmar/Documents/GitHub/testtrivia/MysteryTriviaCOPY
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/jrmar/Documents/GitHub/testtrivia/MysteryTriviaCOPY
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14892] Host "[IP] 192.168.1.46 [Port] 0 [Flags] 2 [Guid] 1537542677 [EditorId] 1537542677 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-33195J9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6940] Host "[IP] 192.168.1.46 [Port] 0 [Flags] 2 [Guid] 221701338 [EditorId] 221701338 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-33195J9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [14892] Host "[IP] 192.168.1.46 [Port] 0 [Flags] 2 [Guid] 1537542677 [EditorId] 1537542677 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-33195J9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6940] Host "[IP] 192.168.1.46 [Port] 0 [Flags] 2 [Guid] 221701338 [EditorId] 221701338 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-33195J9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 183.93 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 191.58 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.17f1 (3e8111cac19d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012212 seconds.
+Registered in 0.012273 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 152.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 152.22 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.794 seconds
+- Completed reload, in  0.856 seconds
 Domain Reload Profiling:
-	ReloadAssembly (795ms)
-		BeginReloadAssembly (89ms)
+	ReloadAssembly (857ms)
+		BeginReloadAssembly (106ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (572ms)
-			LoadAssemblies (85ms)
+		EndReloadAssembly (602ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (115ms)
+			SetupTypeCache (121ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (365ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (379ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (152ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (151ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015520 seconds.
+Registered in 0.015547 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 143.32 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 154.27 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.657 seconds
+- Completed reload, in  1.767 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1658ms)
-		BeginReloadAssembly (125ms)
+	ReloadAssembly (1768ms)
+		BeginReloadAssembly (138ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (1388ms)
-			LoadAssemblies (116ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1483ms)
+			LoadAssemblies (125ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
+			SetupTypeCache (298ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (873ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (931ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (143ms)
-				BeforeProcessingInitializeOnLoad (130ms)
-				ProcessInitializeOnLoadAttributes (533ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
-				AfterProcessingInitializeOnLoad (14ms)
+				RefreshPlugins (154ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (571ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.59 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4521 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 126 unused Assets / (108.5 KB). Loaded Objects now: 4937.
 Memory consumption went from 190.0 MB to 189.9 MB.
-Total: 3.807700 ms (FindLiveObjects: 0.403700 ms CreateObjectMapping: 0.122500 ms MarkObjects: 3.194900 ms  DeleteObjects: 0.085400 ms)
+Total: 4.227500 ms (FindLiveObjects: 0.409300 ms CreateObjectMapping: 0.118500 ms MarkObjects: 3.528700 ms  DeleteObjects: 0.169400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,119 +166,68 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 9819.931430 seconds.
-  path: Assets/MazeMerge/Animation/Marronemine4.controller
-  artifactKey: Guid(f95bfe5148a045948b4c69c96b74c90d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MazeMerge/Animation/Marronemine4.controller using Guid(f95bfe5148a045948b4c69c96b74c90d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d6139f4c73ee46e9bfbc3f8ab5119d') in 0.047464 seconds 
+  Time since last request: 66911.753095 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch ray blur add.mat
+  artifactKey: Guid(131d5a2c82c6cbb469ab522af6fe9aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch ray blur add.mat using Guid(131d5a2c82c6cbb469ab522af6fe9aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b5e61b24196401b2d5f6d564149360b') in 0.187887 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.884603 seconds.
-  path: Assets/MazeMerge/Animation/MarroneMine4.anim
-  artifactKey: Guid(22d7b3efe70a6ec4a952c37c6b8c4cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MazeMerge/Animation/MarroneMine4.anim using Guid(22d7b3efe70a6ec4a952c37c6b8c4cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bef90e180f624e90d85ba92993e4ef9') in 0.009615 seconds 
+  Time since last request: 28.941668 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr magic star.png
+  artifactKey: Guid(081073d8f2209c949819e1e5872845b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr magic star.png using Guid(081073d8f2209c949819e1e5872845b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45fab36f17f462794feefb3d42f8ab7') in 0.083083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 116.392664 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4851dcec77b7cabdce44ce21c5d26967') in 0.107282 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.013435 seconds.
+Registered in 0.014683 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.69 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.08 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.579 seconds
+- Completed reload, in  1.555 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1579ms)
-		BeginReloadAssembly (158ms)
+	ReloadAssembly (1555ms)
+		BeginReloadAssembly (165ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (46ms)
 		EndReloadAssembly (1253ms)
-			LoadAssemblies (119ms)
+			LoadAssemblies (122ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (293ms)
+			SetupTypeCache (306ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (720ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (702ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (533ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 15.16 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 101 unused Assets / (100.8 KB). Loaded Objects now: 4954.
-Memory consumption went from 185.7 MB to 185.6 MB.
-Total: 4.418200 ms (FindLiveObjects: 0.378200 ms CreateObjectMapping: 0.104100 ms MarkObjects: 3.831100 ms  DeleteObjects: 0.103000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013787 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.89 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.580 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1581ms)
-		BeginReloadAssembly (150ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1308ms)
-			LoadAssemblies (110ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (370ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (698ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (518ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (512ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 15.13 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 14.40 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 101 unused Assets / (100.8 KB). Loaded Objects now: 4970.
-Memory consumption went from 185.7 MB to 185.6 MB.
-Total: 3.899300 ms (FindLiveObjects: 0.354000 ms CreateObjectMapping: 0.104300 ms MarkObjects: 3.361700 ms  DeleteObjects: 0.078400 ms)
+Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 4996.
+Memory consumption went from 190.1 MB to 190.0 MB.
+Total: 4.449000 ms (FindLiveObjects: 0.356000 ms CreateObjectMapping: 0.102100 ms MarkObjects: 3.884600 ms  DeleteObjects: 0.104900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -291,126 +240,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 444.718257 seconds.
-  path: Assets/MazeMerge/Animation/MarroneMine2.controller
-  artifactKey: Guid(998088aa5c3a54243ac6b833fc8629e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MazeMerge/Animation/MarroneMine2.controller using Guid(998088aa5c3a54243ac6b833fc8629e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7c93d048bc87d46de528e03bcb3fe6') in 0.030556 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.835455 seconds.
-  path: Assets/MazeMerge/Animation/MarroneMine3.anim
-  artifactKey: Guid(b9c0c481017b47b4fa1fcff44350b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MazeMerge/Animation/MarroneMine3.anim using Guid(b9c0c481017b47b4fa1fcff44350b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c8cd5b5b07db639ae59ae6ac63c1e0') in 0.008324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.925892 seconds.
-  path: Assets/MazeMerge/Animation/MarroneMine3.controller
-  artifactKey: Guid(272437c0eac73a84e8112a37a118cf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MazeMerge/Animation/MarroneMine3.controller using Guid(272437c0eac73a84e8112a37a118cf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0161f132a8e362a8f6658aed4c07a58') in 0.004332 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.014501 seconds.
+Registered in 0.013742 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.76 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.515 seconds
+- Completed reload, in  1.532 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1516ms)
-		BeginReloadAssembly (157ms)
+	ReloadAssembly (1533ms)
+		BeginReloadAssembly (159ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (1219ms)
+		EndReloadAssembly (1243ms)
 			LoadAssemblies (123ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (281ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (690ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (108ms)
-				ProcessInitializeOnLoadAttributes (505ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 14.76 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 101 unused Assets / (100.8 KB). Loaded Objects now: 4986.
-Memory consumption went from 185.8 MB to 185.7 MB.
-Total: 5.159600 ms (FindLiveObjects: 0.452000 ms CreateObjectMapping: 0.285600 ms MarkObjects: 4.341700 ms  DeleteObjects: 0.079100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014918 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.45 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.493 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1494ms)
-		BeginReloadAssembly (152ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1220ms)
-			LoadAssemblies (112ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
+			SetupTypeCache (300ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (687ms)
+			SetupLoadedEditorAssemblies (697ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (496ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (510ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 14.29 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 14.09 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 5002.
-Memory consumption went from 185.8 MB to 185.7 MB.
-Total: 3.718100 ms (FindLiveObjects: 0.353400 ms CreateObjectMapping: 0.104400 ms MarkObjects: 3.196400 ms  DeleteObjects: 0.062600 ms)
+Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 5012.
+Memory consumption went from 190.1 MB to 190.0 MB.
+Total: 4.244500 ms (FindLiveObjects: 0.376800 ms CreateObjectMapping: 0.116900 ms MarkObjects: 3.645900 ms  DeleteObjects: 0.103400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -425,49 +299,49 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.013444 seconds.
+Registered in 0.014314 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.01 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.477 seconds
+- Completed reload, in  1.547 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1477ms)
-		BeginReloadAssembly (159ms)
+	ReloadAssembly (1548ms)
+		BeginReloadAssembly (163ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1196ms)
-			LoadAssemblies (115ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1253ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (285ms)
+			SetupTypeCache (294ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (670ms)
+			SetupLoadedEditorAssemblies (709ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (493ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (518ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 14.48 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 14.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 5018.
-Memory consumption went from 185.8 MB to 185.7 MB.
-Total: 3.897900 ms (FindLiveObjects: 0.396900 ms CreateObjectMapping: 0.125400 ms MarkObjects: 3.295300 ms  DeleteObjects: 0.079100 ms)
+Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 5028.
+Memory consumption went from 190.2 MB to 190.1 MB.
+Total: 4.755400 ms (FindLiveObjects: 0.516300 ms CreateObjectMapping: 0.155300 ms MarkObjects: 4.010300 ms  DeleteObjects: 0.071600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -479,3 +353,321 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 146.935644 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187b3b6619c6918b68dddb0b1e88a975') in 0.155628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.142267 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d317e969d9413bd7bad0bbb9b2699e') in 0.049936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.466909 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5635131905e5c1d3bb659a35ac16ea4') in 0.045487 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017289 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.544 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1545ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1238ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (290ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (709ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (513ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 15.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 101 unused Assets / (101.0 KB). Loaded Objects now: 5044.
+Memory consumption went from 190.2 MB to 190.1 MB.
+Total: 3.972600 ms (FindLiveObjects: 0.394400 ms CreateObjectMapping: 0.108900 ms MarkObjects: 3.387200 ms  DeleteObjects: 0.080300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 39.476267 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec9e005426c71077c8424a770d45ab4') in 0.159537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.463409 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8adf53619021b96a499daec724ef19ff') in 0.046947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.521496 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb882bee03dcd9e003708a4faeda601') in 0.045887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.441149 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f48a6d564af504d07ddd7faee6d6a18') in 0.045969 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016788 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.534 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1535ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1235ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (687ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (498ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 13.89 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 5060.
+Memory consumption went from 190.2 MB to 190.1 MB.
+Total: 4.149600 ms (FindLiveObjects: 0.395200 ms CreateObjectMapping: 0.120100 ms MarkObjects: 3.554800 ms  DeleteObjects: 0.077300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 30.030190 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7157c9c9031fa7f3df01c0cc2c2df3') in 0.161112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.569238 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06de12d214452cc4aa6201772dd65527') in 0.045482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.225944 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041376d6d151abc086494bc2b01b6cd2') in 0.044276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.615763 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f88e159253918f4d2b8707ab4f16d78') in 0.044515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.968399 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cfdb3a8e1a46685229c3d9bf29e69ab') in 0.044584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.393898 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ffa4289dd2144bf9e2e10cd48e1bf0') in 0.047607 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015556 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.634 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1635ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1258ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (291ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (712ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (519ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 14.04 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 5076.
+Memory consumption went from 190.3 MB to 190.2 MB.
+Total: 4.653400 ms (FindLiveObjects: 0.397300 ms CreateObjectMapping: 0.105000 ms MarkObjects: 4.051100 ms  DeleteObjects: 0.098900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 39.550113 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3404211622ec916515dc083d35478b23') in 0.149358 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013892 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jrmar\Documents\GitHub\testtrivia\MysteryTriviaCOPY\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.49 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.527 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1528ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1236ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (695ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (505ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 14.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4487 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 101 unused Assets / (100.9 KB). Loaded Objects now: 5092.
+Memory consumption went from 190.3 MB to 190.2 MB.
+Total: 4.974400 ms (FindLiveObjects: 0.476500 ms CreateObjectMapping: 0.115400 ms MarkObjects: 4.291200 ms  DeleteObjects: 0.089600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6.994403 seconds.
+  path: Assets/MazeMerge/Prefab/ChestPot.prefab
+  artifactKey: Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MazeMerge/Prefab/ChestPot.prefab using Guid(e4518086bdaf31b4b808f6cad9591927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a0fc416b81e4e752c08cd3ed7420e1') in 0.162562 seconds 
