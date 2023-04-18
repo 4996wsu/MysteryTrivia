@@ -1094,6 +1094,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_CanvasGroup_set_alpha();
 		Register_UnityEngine_CanvasGroup_set_alpha();
 
+		//System.Void UnityEngine.CanvasGroup::set_interactable(System.Boolean)
+		void Register_UnityEngine_CanvasGroup_set_interactable();
+		Register_UnityEngine_CanvasGroup_set_interactable();
+
 	//End Registrations for type : UnityEngine.CanvasGroup
 
 	//Start Registrations for type : UnityEngine.CanvasRenderer

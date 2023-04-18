@@ -122,6 +122,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* CanvasGroup_get_blocksRaycasts_mFEC4D16E66C
 IL2CPP_EXTERN_C const RuntimeMethod* CanvasGroup_get_ignoreParentGroups_m2F38E053B86FD01735C2DA2047E197C0B8654361_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CanvasGroup_get_interactable_mE5EE5E3AFEAD06D18E15A91C0A0E706D9FE40F76_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CanvasGroup_set_alpha_m5C06839316D948BB4F75ED72C87FA1F1A20C333F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CanvasRenderer_AddUIVertexStream_mD839C4D23B91E99AE2BD8F89C537FE62F5DB5DF5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CanvasRenderer_Clear_m496D522F1DBD1037417E470CF2D4D9FD22F68E81_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CanvasRenderer_CreateUIVertexStreamInternal_mDCD7E8138A464984EA7F4CE942BA4C0E034B7296_RuntimeMethod_var;
@@ -1363,6 +1364,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CanvasGroup_get_interactable_mE5EE5E3AFE
 	_il2cpp_icall_func = (CanvasGroup_get_interactable_mE5EE5E3AFEAD06D18E15A91C0A0E706D9FE40F76_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CanvasGroup::get_interactable()");
 	bool icallRetVal = _il2cpp_icall_func(__this);
 	return icallRetVal;
+}
+// System.Void UnityEngine.CanvasGroup::set_interactable(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757 (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StackTraceSentry _stackTraceSentry(CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_RuntimeMethod_var);
+	typedef void (*CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_ftn) (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094*, bool);
+	static CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CanvasGroup::set_interactable(System.Boolean)");
+	_il2cpp_icall_func(__this, ___0_value);
 }
 // System.Boolean UnityEngine.CanvasGroup::get_blocksRaycasts()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CanvasGroup_get_blocksRaycasts_mFEC4D16E66CD2480692CC66CF79FCA06DBF0307C (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* __this, const RuntimeMethod* method) 

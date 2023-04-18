@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     //    DatabaseReference reference;
     public Animator playeranimator;
     [SerializeField]
-    private float speed = 3.0f;
+    public float speed = 3.0f;
     [SerializeField]
     private float rotationSpeed;
 
@@ -350,14 +350,14 @@ public class Player : MonoBehaviour
             points += 150;
             hintPoints.text = "Hint Points: " + points;
             goodPickup.Play();
-            Destroy(collision.gameObject);
+    
 
         }
 
         if (collision.gameObject.tag == "Boost")
         {
             flagBoost += 1;
-            speed += 4.0f;
+            speed += 2.0f;
             Destroy(collision.gameObject);
             whoosh.Play();
         }

@@ -20,6 +20,8 @@ public class PlayFabTestAJ : MonoBehaviour
     private int difficulty = 1;
     private string category = "Math";
     private bool guest = true;
+
+
     // Start is called before the first frame update
     void Start()
     {
