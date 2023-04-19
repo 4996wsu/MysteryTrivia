@@ -350,10 +350,7 @@ public class Player : MonoBehaviour
             points += 150;
             hintPoints.text = "Hint Points: " + points;
             goodPickup.Play();
-    
-
         }
-
         if (collision.gameObject.tag == "Boost")
         {
             flagBoost += 1;
@@ -373,10 +370,8 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Lock" && popq.unlock == false)
         {
-
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-
                 transform.Translate(18 * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.RightArrow))

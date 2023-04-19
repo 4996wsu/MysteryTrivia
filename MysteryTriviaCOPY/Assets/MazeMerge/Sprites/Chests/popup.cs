@@ -14,7 +14,9 @@ public class popup : MonoBehaviour
         points.Play();
         }
     }
+
     public void DelayedDestroy(){
-        Destroy(thisPot);
+        // Destroy(thisPot);
+        thisPot.SetActive(false);
     }
 }

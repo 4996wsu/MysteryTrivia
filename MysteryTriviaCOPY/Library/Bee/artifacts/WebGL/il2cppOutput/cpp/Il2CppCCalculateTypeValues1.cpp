@@ -35291,6 +35291,10 @@ struct popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61  : public MonoBe
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayAnswers_27;
 	// System.String[] popupquestions::CorrectAnswers
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___CorrectAnswers_28;
+	// UnityEngine.AudioSource popupquestions::rightAnswer
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___rightAnswer_29;
+	// UnityEngine.AudioSource popupquestions::wrongAnswer
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___wrongAnswer_30;
 };
 
 // testjson

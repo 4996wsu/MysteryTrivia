@@ -16,6 +16,7 @@ public class LeaderBoardController : MonoBehaviour
         for(int i=0;i<Parent.childCount;i++)
         {
             Destroy(Parent.GetChild(i).gameObject);
+           // Parent.GetChild(i).gameObject.SetActive(false);
         }
         //Get Updated Leaderboard
         List<LeaderBoardModel> data = LeaderboardManager.data;
