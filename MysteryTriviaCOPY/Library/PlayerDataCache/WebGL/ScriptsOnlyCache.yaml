@@ -1374,69 +1374,6 @@ ScriptsOnlyBuild:
     fullTypeName: LevelComplete
     methodName: NextLevel
   - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: MuteToggle
-  - assembly: Assembly-CSharp
-    fullTypeName: ChangeScene
-    methodName: MoveToScene
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: checkPoints
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelComplete
-    methodName: NextLevel
-  - assembly: Assembly-CSharp
     fullTypeName: ChangeScene
     methodName: MoveToScene
   - assembly: Assembly-CSharp
@@ -1563,6 +1500,69 @@ ScriptsOnlyBuild:
     fullTypeName: LevelComplete
     methodName: NextLevel
   - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: MuteToggle
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: checkPoints
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelComplete
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
     fullTypeName: popupquestions
     methodName: getAnswer
   - assembly: Assembly-CSharp
@@ -1811,69 +1811,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelComplete
-    methodName: NextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: ChangeVolume
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: checkPoints
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: audioController
-    methodName: MuteToggle
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: getAnswer
-  - assembly: Assembly-CSharp
-    fullTypeName: popupquestions
-    methodName: btnClick
-  - assembly: UnityEngine.AnimationModule
-    fullTypeName: UnityEngine.Animator
-    methodName: SetTrigger
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: waitToggleSpeed
-  - assembly: Assembly-CSharp
-    fullTypeName: ChangeScene
-    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: LevelComplete
     methodName: NextLevel
@@ -2126,6 +2063,69 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: audioController
     methodName: MuteToggle
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelComplete
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: ChangeVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: checkPoints
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: audioController
+    methodName: MuteToggle
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: getAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: popupquestions
+    methodName: btnClick
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: waitToggleSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   - assembly: Assembly-CSharp
     fullTypeName: LevelComplete
     methodName: NextLevel
@@ -9304,18 +9304,18 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Maze-MC14.unity
   - Assets/Scenes/Maze-MC13.unity
   - Assets/Scenes/AustinMaze6.unity
-  - Assets/Scenes/AustinMaze13.unity
   - Assets/Scenes/AustinMaze8.unity
   - Assets/Scenes/AustinMaze15.unity
+  - Assets/Scenes/AustinMaze13.unity
   - Assets/Scenes/Maze-MC1.unity
   - Assets/Scenes/Maze-MC3.unity
   - Assets/Scenes/Maze-MC15.unity
   - Assets/Scenes/Maze-MC4.unity
-  - Assets/Scenes/Maze-MC5.unity
   - Assets/Scenes/AustinMaze10.unity
   - Assets/Scenes/AustinMaze12.unity
   - Assets/Scenes/AustinMaze2.unity
   - Assets/Scenes/AustinMaze14.unity
+  - Assets/Scenes/Maze-MC5.unity
   - Assets/Scenes/Maze-MC6.unity
   - Assets/Scenes/Maze-MC7.unity
   - Assets/Scenes/Maze-MC8.unity
@@ -9329,4 +9329,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Maze_MR7.unity
   - Assets/Scenes/Maze_MR9.unity
   - Assets/Scenes/mazeMarrone7.unity
-  playerPath: C:/Users/Austi/Desktop/FinalProject
+  playerPath: C:/Users/Austi/Desktop/New folder (3)

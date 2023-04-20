@@ -75,14 +75,14 @@ EditorBuildSettings:
     path: Assets/Scenes/AustinMaze6.unity
     guid: a727a0555adce914fb25e251bda55e58
   - enabled: 1
-    path: Assets/Scenes/AustinMaze13.unity
-    guid: ea9729506f4a2854ba0947d6b73678ed
-  - enabled: 1
     path: Assets/Scenes/AustinMaze8.unity
     guid: ac21f02516bc1744b8fe61a25f8e9378
   - enabled: 1
     path: Assets/Scenes/AustinMaze15.unity
     guid: d958bf70851ed264bb21eebfb49e8464
+  - enabled: 1
+    path: Assets/Scenes/AustinMaze13.unity
+    guid: ea9729506f4a2854ba0947d6b73678ed
   - enabled: 1
     path: Assets/Scenes/Maze-MC1.unity
     guid: 658118a67c9c5b3468aa9d9516009109
@@ -96,9 +96,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Maze-MC4.unity
     guid: 4dd09bd516d37304aab1b08011c3d079
   - enabled: 1
-    path: Assets/Scenes/Maze-MC5.unity
-    guid: bd50e31d7ec1c514a88dc8c30e0d6975
-  - enabled: 1
     path: Assets/Scenes/AustinMaze10.unity
     guid: 3d7731fdb458d324abc99bb7072c5099
   - enabled: 1
@@ -110,6 +107,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AustinMaze14.unity
     guid: 09863d057c7d9a845ba8fd8dab0902b1
+  - enabled: 1
+    path: Assets/Scenes/Maze-MC5.unity
+    guid: bd50e31d7ec1c514a88dc8c30e0d6975
   - enabled: 1
     path: Assets/Scenes/Maze-MC6.unity
     guid: 7cfd4b00b85cf8e41acaaca5bbba9543
