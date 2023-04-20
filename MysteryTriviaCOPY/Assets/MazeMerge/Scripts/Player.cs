@@ -179,6 +179,9 @@ public class Player : MonoBehaviour
            // transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
         */
+        //int temppoints = points;
+       // int playerpoints = PlayerPrefs.GetInt("playerpoints");
+        PlayerPrefs.SetInt("playerpoints", points);
         hintPoints.text = "Hint Points: " + points;
     }
     public void waitToggleSpeed()

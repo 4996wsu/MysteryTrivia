@@ -48,9 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/mazeMarrone4.unity
     guid: 2e1e787cf98253c4385332ee45d13d81
   - enabled: 1
-    path: Assets/Scenes/mazeMarrone5.unity
-    guid: 13d9bf068c0f94b468d6100c9527aa20
-  - enabled: 1
     path: Assets/Scenes/AustinMaze4.unity
     guid: ce4c736e536642246a32c9f910275bf7
   - enabled: 1

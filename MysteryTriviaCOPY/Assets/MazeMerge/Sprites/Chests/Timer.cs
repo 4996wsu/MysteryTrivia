@@ -33,6 +33,9 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {//timer gets called if the player is frozen for a question
+        
+          
+         
         if(Player.GetComponent<Player>().speed==0){
             timerIsRunning = true;        
              UI_timer.alpha = 1f;
@@ -90,6 +93,7 @@ public class Timer : MonoBehaviour
                 Debug.Log("Timeout available points: " + (availablepoints-10));
               }
             }
+        
             }
     
 }

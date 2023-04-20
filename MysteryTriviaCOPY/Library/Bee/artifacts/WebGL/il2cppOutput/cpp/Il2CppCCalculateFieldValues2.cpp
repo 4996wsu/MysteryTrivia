@@ -21957,52 +21957,54 @@ struct popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61  : public MonoBe
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___popUpText_6;
 	// Player popupquestions::player1
 	Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* ___player1_7;
+	// UnityEngine.GameObject popupquestions::player2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___player2_8;
 	// TMPro.TMP_Text popupquestions::answer1
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer1_8;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer1_9;
 	// TMPro.TMP_Text popupquestions::answer2
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer2_9;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer2_10;
 	// TMPro.TMP_Text popupquestions::answer3
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer3_10;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer3_11;
 	// TMPro.TMP_Text popupquestions::answer4
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer4_11;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer4_12;
 	// UnityEngine.UI.Button popupquestions::answer1button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer1button_12;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer1button_13;
 	// UnityEngine.UI.Button popupquestions::answer2button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer2button_13;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer2button_14;
 	// UnityEngine.UI.Button popupquestions::answer3button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer3button_14;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer3button_15;
 	// UnityEngine.UI.Button popupquestions::answer4button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer4button_15;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer4button_16;
 	// UnityEngine.GameObject popupquestions::QuestionBox
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QuestionBox_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QuestionBox_17;
 	// System.String popupquestions::ChosenCategory
-	String_t* ___ChosenCategory_17;
+	String_t* ___ChosenCategory_18;
 	// UnityEngine.GameObject popupquestions::answerbutton
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___answerbutton_18;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___answerbutton_19;
 	// System.String popupquestions::correctAnswer
-	String_t* ___correctAnswer_19;
+	String_t* ___correctAnswer_20;
 	// System.Boolean popupquestions::unlock
-	bool ___unlock_20;
+	bool ___unlock_21;
 	// System.Int32 popupquestions::hintCount
-	int32_t ___hintCount_21;
+	int32_t ___hintCount_22;
 	// System.Int32 popupquestions::flg
-	int32_t ___flg_22;
+	int32_t ___flg_23;
 	// System.Int32 popupquestions::total
-	int32_t ___total_23;
+	int32_t ___total_24;
 	// System.Int32 popupquestions::start
-	int32_t ___start_24;
+	int32_t ___start_25;
 	// System.String popupquestions::answer
-	String_t* ___answer_25;
+	String_t* ___answer_26;
 	// System.String[] popupquestions::ArrayQuestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayQuestions_26;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayQuestions_27;
 	// System.String[] popupquestions::ArrayAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayAnswers_27;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayAnswers_28;
 	// System.String[] popupquestions::CorrectAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___CorrectAnswers_28;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___CorrectAnswers_29;
 	// UnityEngine.AudioSource popupquestions::rightAnswer
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___rightAnswer_29;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___rightAnswer_30;
 	// UnityEngine.AudioSource popupquestions::wrongAnswer
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___wrongAnswer_30;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___wrongAnswer_31;
 };
 
 // UnityEngine.UI.Dropdown/DropdownItem
@@ -38318,9 +38320,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8234[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8235[25] = 
 {
 	static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___playeranimator_4)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___speed_5)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rotationSpeed_6)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___polycolider_7)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rb_8)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___spriteRenderer_9)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___points_10)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___level_11)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___mazenumber_12)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___flag_13)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___flagBoost_14)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___facingRight_15)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___froze_16)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___hintPoints_17)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___win_18)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___popUp_19)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___isGameWon_20)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___check_21)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___popq_22)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___user_23)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___newLock_24)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___guest_25)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___explosion_26)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___goodPickup_27)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___whoosh_28)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8236[27] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8236[28] = 
 {
-	static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpBox_4)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___animator_5)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpText_6)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___player1_7)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1_8)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2_9)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3_10)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4_11)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1button_12)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2button_13)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3button_14)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4button_15)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___QuestionBox_16)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ChosenCategory_17)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answerbutton_18)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___correctAnswer_19)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___unlock_20)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___hintCount_21)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___flg_22)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___total_23)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___start_24)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer_25)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ArrayQuestions_26)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ArrayAnswers_27)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___CorrectAnswers_28)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___rightAnswer_29)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___wrongAnswer_30)),};
+	static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpBox_4)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___animator_5)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___popUpText_6)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___player1_7)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___player2_8)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1_9)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2_10)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3_11)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4_12)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer1button_13)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer2button_14)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer3button_15)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer4button_16)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___QuestionBox_17)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ChosenCategory_18)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answerbutton_19)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___correctAnswer_20)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___unlock_21)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___hintCount_22)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___flg_23)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___total_24)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___start_25)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___answer_26)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ArrayQuestions_27)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___ArrayAnswers_28)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___CorrectAnswers_29)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___rightAnswer_30)),static_cast<int32_t>(offsetof(popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61, ___wrongAnswer_31)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8237[2] = 
 {
 	static_cast<int32_t>(offsetof(open_t035E1863E01681DAC10A9648B949128A79DC20BA, ___thisChest_4)),static_cast<int32_t>(offsetof(open_t035E1863E01681DAC10A9648B949128A79DC20BA, ___chestOpen_5)),};

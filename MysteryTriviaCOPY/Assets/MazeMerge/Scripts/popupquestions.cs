@@ -15,6 +15,7 @@ public class popupquestions : MonoBehaviour
     public Animator animator;
     public TMP_Text popUpText; //text for question
     public Player player1;
+    public GameObject player2;
     public TMP_Text answer1;
     public TMP_Text answer2;
     public TMP_Text answer3;
@@ -126,8 +127,11 @@ public class popupquestions : MonoBehaviour
         string currentQuestion;
         string[] currentAnswers;
 
-        player1 = GameObject.Find("Player").GetComponent<Player>();
-        int points = player1.points;
+        //player1 = GameObject.Find("Player").GetComponent<Player>();
+        // int points = GameObject.Find("Player").GetComponent<Player>().points;
+        int playerpoints = PlayerPrefs.GetInt("playerpoints");
+        int points = playerpoints;
+        // int points = player1.points;
         int randomNum = Random.Range(0, 3); //rn 0 to number of questions
 
         var hintButton = GameObject.Find("hint").GetComponent<Button>();

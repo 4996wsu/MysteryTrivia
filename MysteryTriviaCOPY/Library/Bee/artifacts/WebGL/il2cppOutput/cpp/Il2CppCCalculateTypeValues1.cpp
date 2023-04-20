@@ -35249,52 +35249,54 @@ struct popupquestions_tEA7346FB52AAF4CEDBF4C8BD5B63424D4B8D8A61  : public MonoBe
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___popUpText_6;
 	// Player popupquestions::player1
 	Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* ___player1_7;
+	// UnityEngine.GameObject popupquestions::player2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___player2_8;
 	// TMPro.TMP_Text popupquestions::answer1
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer1_8;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer1_9;
 	// TMPro.TMP_Text popupquestions::answer2
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer2_9;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer2_10;
 	// TMPro.TMP_Text popupquestions::answer3
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer3_10;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer3_11;
 	// TMPro.TMP_Text popupquestions::answer4
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer4_11;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___answer4_12;
 	// UnityEngine.UI.Button popupquestions::answer1button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer1button_12;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer1button_13;
 	// UnityEngine.UI.Button popupquestions::answer2button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer2button_13;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer2button_14;
 	// UnityEngine.UI.Button popupquestions::answer3button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer3button_14;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer3button_15;
 	// UnityEngine.UI.Button popupquestions::answer4button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer4button_15;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___answer4button_16;
 	// UnityEngine.GameObject popupquestions::QuestionBox
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QuestionBox_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QuestionBox_17;
 	// System.String popupquestions::ChosenCategory
-	String_t* ___ChosenCategory_17;
+	String_t* ___ChosenCategory_18;
 	// UnityEngine.GameObject popupquestions::answerbutton
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___answerbutton_18;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___answerbutton_19;
 	// System.String popupquestions::correctAnswer
-	String_t* ___correctAnswer_19;
+	String_t* ___correctAnswer_20;
 	// System.Boolean popupquestions::unlock
-	bool ___unlock_20;
+	bool ___unlock_21;
 	// System.Int32 popupquestions::hintCount
-	int32_t ___hintCount_21;
+	int32_t ___hintCount_22;
 	// System.Int32 popupquestions::flg
-	int32_t ___flg_22;
+	int32_t ___flg_23;
 	// System.Int32 popupquestions::total
-	int32_t ___total_23;
+	int32_t ___total_24;
 	// System.Int32 popupquestions::start
-	int32_t ___start_24;
+	int32_t ___start_25;
 	// System.String popupquestions::answer
-	String_t* ___answer_25;
+	String_t* ___answer_26;
 	// System.String[] popupquestions::ArrayQuestions
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayQuestions_26;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayQuestions_27;
 	// System.String[] popupquestions::ArrayAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayAnswers_27;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ArrayAnswers_28;
 	// System.String[] popupquestions::CorrectAnswers
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___CorrectAnswers_28;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___CorrectAnswers_29;
 	// UnityEngine.AudioSource popupquestions::rightAnswer
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___rightAnswer_29;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___rightAnswer_30;
 	// UnityEngine.AudioSource popupquestions::wrongAnswer
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___wrongAnswer_30;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___wrongAnswer_31;
 };
 
 // testjson
